@@ -10,6 +10,7 @@ function App() {
   const [closingPrice, setClosingPrice] = useState(23000.0);
   const [isLong, setIsLong] = useState(true);
   const [numsLoc, setNumsLoc] = useState([253, 289, 325]);
+  const [numLocLR, setNumLocLR] = useState(300);
 
   function downLoad() {
     console.log("download started!");
@@ -38,6 +39,12 @@ function App() {
     const two = numsLoc[1] - 1;
     const three = numsLoc[2] - 1;
     setNumsLoc([one, two, three]);
+  }
+  function left() {
+    setNumLocLR(numLocLR + 1);
+  }
+  function right() {
+    setNumLocLR(numLocLR - 1);
   }
 
   const onSaveAs = (uri, filename) => {
@@ -81,11 +88,18 @@ function App() {
         />
       </div>
       <br />
+      <button onClick={up}>숫자 위로</button>
+      <br />
+      <br />
+      <button onClick={left}>숫자 좌로</button>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <button onClick={right}>숫자 우로</button>
+      <br />
+      <br />
+      <button onClick={down}>숫자 아래로</button>
+      <br />
+      <br />
       <button onClick={downLoad}>다운로드</button>
-      <br />
-      <br />
-      <button onClick={up}>숫자 좀 올리기</button>
-      <button onClick={down}>숫자 좀 내리기</button>
       <br />
       <br />
       <Image
@@ -94,12 +108,13 @@ function App() {
         coin={coin}
         isLong={isLong}
         numsLoc={numsLoc}
+        numLocLR={numLocLR}
       />
     </div>
   );
 }
 
-function Image({ entryPrice, closingPrice, coin, isLong, numsLoc }) {
+function Image({ entryPrice, closingPrice, coin, isLong, numsLoc, numLocLR }) {
   const [result, setResult] = useState(
     ((closingPrice / entryPrice - 1) * 75 * 100).toFixed(2)
   );
@@ -140,7 +155,7 @@ function Image({ entryPrice, closingPrice, coin, isLong, numsLoc }) {
         <div
           style={{
             position: "absolute",
-            right: "300px",
+            right: numLocLR + "px",
             top: numsLoc[0] + "px",
             fontSize: "20px",
             color: "white",
@@ -153,7 +168,7 @@ function Image({ entryPrice, closingPrice, coin, isLong, numsLoc }) {
         <div
           style={{
             position: "absolute",
-            right: "300px",
+            right: numLocLR + "px",
             top: numsLoc[1] + "px",
             fontSize: "20px",
             color: "white",
@@ -166,7 +181,7 @@ function Image({ entryPrice, closingPrice, coin, isLong, numsLoc }) {
         <div
           style={{
             position: "absolute",
-            right: "300px",
+            right: numLocLR + "px",
             top: numsLoc[2] + "px",
             fontSize: "20px",
             color: "white",
