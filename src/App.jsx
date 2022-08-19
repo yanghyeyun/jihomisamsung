@@ -103,7 +103,7 @@ function Image({ entryPrice, closingPrice, coin, isLong }) {
           style={{
             position: "absolute",
             left: "47px",
-            top: "138px",
+            top: "140px",
             fontSize: "20px",
             color: "white",
             fontFamily: "HarmonyOS Sans",
@@ -115,12 +115,12 @@ function Image({ entryPrice, closingPrice, coin, isLong }) {
         <div
           style={{
             position: "absolute",
-            right: "310px",
-            top: "260px",
+            right: "300px",
+            top: "258px",
             fontSize: "20px",
             color: "white",
             fontFamily: "HarmonyOS Sans",
-            fontWeight: "bold",
+            fontWeight: "500",
           }}
         >
           75X
@@ -128,12 +128,12 @@ function Image({ entryPrice, closingPrice, coin, isLong }) {
         <div
           style={{
             position: "absolute",
-            right: "310px",
-            top: "296px",
+            right: "300px",
+            top: "294px",
             fontSize: "20px",
             color: "white",
             fontFamily: "HarmonyOS Sans",
-            fontWeight: "bold",
+            fontWeight: "500",
           }}
         >
           ₮{entryPrice}
@@ -141,12 +141,12 @@ function Image({ entryPrice, closingPrice, coin, isLong }) {
         <div
           style={{
             position: "absolute",
-            right: "310px",
-            top: "332px",
+            right: "300px",
+            top: "330px",
             fontSize: "20px",
             color: "white",
             fontFamily: "HarmonyOS Sans",
-            fontWeight: "bold",
+            fontWeight: "500",
           }}
         >
           ₮{closingPrice}
@@ -165,7 +165,7 @@ function Image({ entryPrice, closingPrice, coin, isLong }) {
               fontSize: "38px",
               color: "rgb(31, 163, 178)",
               fontFamily: "HarmonyOS Sans",
-              fontWeight: "940",
+              fontWeight: "500",
             }}
           >
             {result > 0 ? (
@@ -184,7 +184,7 @@ function Image({ entryPrice, closingPrice, coin, isLong }) {
             <span
               style={{
                 fontSize: "24px",
-                fontWeight: "700",
+                fontWeight: "500",
               }}
             >
               %
