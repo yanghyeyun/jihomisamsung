@@ -2,32 +2,52 @@ import React, { useState, useEffect } from "react";
 import "./App.css";
 import bgLong from "./bg_long.png";
 import bgShort from "./bg_short.png";
-import html2canvas from 'html2canvas';
+import html2canvas from "html2canvas";
 
 function App() {
   const [coin, setCoin] = useState("BTCUSDT");
   const [entryPrice, setEntryPrice] = useState(22898.0);
   const [closingPrice, setClosingPrice] = useState(23000.0);
   const [isLong, setIsLong] = useState(true);
+  const [numsLoc, setNumsLoc] = useState([253, 289, 325]);
 
   function downLoad() {
-    console.log("download started!")
-    const name = (isLong ? "Long-" : "Short-") + coin + "-" + entryPrice + "-" + closingPrice
+    console.log("download started!");
+    const name =
+      (isLong ? "Long-" : "Short-") +
+      coin +
+      "-" +
+      entryPrice +
+      "-" +
+      closingPrice;
 
-    const image = document.getElementById('image');
-    html2canvas(image).then(canvas => {
-      onSaveAs(canvas.toDataURL('image/png'), name + '.png')
+    const image = document.getElementById("image");
+    html2canvas(image).then((canvas) => {
+      onSaveAs(canvas.toDataURL("image/png"), name + ".png");
     });
   }
 
-  const onSaveAs =(uri, filename)=> {
-		var link = document.createElement('a');
-		document.body.appendChild(link);
-		link.href = uri;
-		link.download = filename;
-		link.click();
-		document.body.removeChild(link);
-	};
+  function down() {
+    const one = numsLoc[0] + 1;
+    const two = numsLoc[1] + 1;
+    const three = numsLoc[2] + 1;
+    setNumsLoc([one, two, three]);
+  }
+  function up() {
+    const one = numsLoc[0] - 1;
+    const two = numsLoc[1] - 1;
+    const three = numsLoc[2] - 1;
+    setNumsLoc([one, two, three]);
+  }
+
+  const onSaveAs = (uri, filename) => {
+    var link = document.createElement("a");
+    document.body.appendChild(link);
+    link.href = uri;
+    link.download = filename;
+    link.click();
+    document.body.removeChild(link);
+  };
 
   return (
     <div className="App">
@@ -64,17 +84,22 @@ function App() {
       <button onClick={downLoad}>다운로드</button>
       <br />
       <br />
+      <button onClick={up}>숫자 좀 올리기</button>
+      <button onClick={down}>숫자 좀 내리기</button>
+      <br />
+      <br />
       <Image
-          entryPrice={entryPrice}
-          closingPrice={closingPrice}
-          coin={coin}
-          isLong={isLong}
-        />
+        entryPrice={entryPrice}
+        closingPrice={closingPrice}
+        coin={coin}
+        isLong={isLong}
+        numsLoc={numsLoc}
+      />
     </div>
   );
 }
 
-function Image({ entryPrice, closingPrice, coin, isLong }) {
+function Image({ entryPrice, closingPrice, coin, isLong, numsLoc }) {
   const [result, setResult] = useState(
     ((closingPrice / entryPrice - 1) * 75 * 100).toFixed(2)
   );
@@ -116,7 +141,7 @@ function Image({ entryPrice, closingPrice, coin, isLong }) {
           style={{
             position: "absolute",
             right: "300px",
-            top: "258px",
+            top: numsLoc[0] + "px",
             fontSize: "20px",
             color: "white",
             fontFamily: "HarmonyOS Sans",
@@ -129,7 +154,7 @@ function Image({ entryPrice, closingPrice, coin, isLong }) {
           style={{
             position: "absolute",
             right: "300px",
-            top: "294px",
+            top: numsLoc[1] + "px",
             fontSize: "20px",
             color: "white",
             fontFamily: "HarmonyOS Sans",
@@ -142,7 +167,7 @@ function Image({ entryPrice, closingPrice, coin, isLong }) {
           style={{
             position: "absolute",
             right: "300px",
-            top: "330px",
+            top: numsLoc[2] + "px",
             fontSize: "20px",
             color: "white",
             fontFamily: "HarmonyOS Sans",
