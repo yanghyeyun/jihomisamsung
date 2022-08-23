@@ -11,6 +11,7 @@ function App() {
   const [isLong, setIsLong] = useState(true);
   const [numsLoc, setNumsLoc] = useState([253, 289, 325]);
   const [numLocLR, setNumLocLR] = useState(300);
+  const [leverage, setLeverage] = useState(75);
 
   function downLoad() {
     console.log("download started!");
@@ -58,35 +59,42 @@ function App() {
 
   return (
     <div className="App">
-      <div>
+      <span>
         롱(체크)/숏(미체크) &nbsp;
         <input
           type="checkbox"
           checked={isLong}
           onChange={(e) => setIsLong(!isLong)}
         />
-      </div>
-      <br />
-      <div>
+      </span>
+      &nbsp;&nbsp;&nbsp;&nbsp;
+      <span>
         코인종류 &nbsp;
         <input value={coin} onChange={(e) => setCoin(e.target.value)} />
-      </div>
+      </span>
+      &nbsp;&nbsp;&nbsp;&nbsp;
+      <span>
+        Leverage &nbsp;
+        <input value={leverage} onChange={(e) => setLeverage(e.target.value)} />
+      </span>
       <br />
-      <div>
+      <br />
+      <span>
         매수금액 &nbsp;
         <input
           value={entryPrice}
           onChange={(e) => setEntryPrice(e.target.value)}
         />
-      </div>
-      <br />
-      <div>
+      </span>
+      &nbsp;&nbsp;&nbsp;&nbsp;
+      <span>
         매도금액 &nbsp;
         <input
           value={closingPrice}
           onChange={(e) => setClosingPrice(e.target.value)}
         />
-      </div>
+      </span>
+      <br />
       <br />
       <button onClick={up}>숫자 위로</button>
       <br />
@@ -109,23 +117,39 @@ function App() {
         isLong={isLong}
         numsLoc={numsLoc}
         numLocLR={numLocLR}
+        leverage={leverage}
       />
+      <br />
+      <br />
+      <div><i>Made By</i> <b>Jung Ji Ho</b></div>
     </div>
   );
 }
 
-function Image({ entryPrice, closingPrice, coin, isLong, numsLoc, numLocLR }) {
+function Image({
+  entryPrice,
+  closingPrice,
+  coin,
+  isLong,
+  numsLoc,
+  numLocLR,
+  leverage,
+}) {
   const [result, setResult] = useState(
     ((closingPrice / entryPrice - 1) * 75 * 100).toFixed(2)
   );
   useEffect(() => {
-    const calculated = ((closingPrice / entryPrice - 1) * 75 * 100).toFixed(2);
+    const calculated = (
+      (closingPrice / entryPrice - 1) *
+      leverage *
+      100
+    ).toFixed(2);
     if (!isLong && calculated < 0) {
       setResult(-calculated);
     } else {
       setResult(calculated);
     }
-  }, [entryPrice, closingPrice, coin, isLong]);
+  }, [entryPrice, closingPrice, coin, isLong, leverage]);
   return (
     <div>
       <div
@@ -163,7 +187,7 @@ function Image({ entryPrice, closingPrice, coin, isLong, numsLoc, numLocLR }) {
             fontWeight: "500",
           }}
         >
-          75X
+          {leverage}X
         </div>
         <div
           style={{
