@@ -225,7 +225,7 @@ function Image({
             style={{
               position: "absolute",
               left: "40px",
-              top: "150px",
+              top: "160px",
               fontSize: "37px",
               color: "rgb(31, 163, 178)",
               fontFamily: "HarmonyOS Sans",
