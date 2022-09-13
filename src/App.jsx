@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import "./App.css";
 import bgLong from "./bg_long.png";
 import bgShort from "./bg_short.png";
-import tanguPic from "./tangu.png";
 import html2canvas from "html2canvas";
 
 function App() {
@@ -13,7 +12,6 @@ function App() {
   const [numsLoc, setNumsLoc] = useState([248, 285, 321]);
   const [numLocLR, setNumLocLR] = useState(290);
   const [leverage, setLeverage] = useState(75);
-  const [tangu, setTangu] = useState(false);
   
   function downLoad() {
     console.log("download started!");
@@ -261,7 +259,7 @@ function Image({
       <br />
       <br />
       <div>
-        <i>Made By</i> <b>Jung Ji </b><span onClick={() => setTangu(!tangu)}><b>Ho</b></span>
+        <i>Made By</i> <b>Jung Ji ho </span>
       </div>
     </div>
   );
