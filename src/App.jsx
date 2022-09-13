@@ -13,7 +13,8 @@ function App() {
   const [numsLoc, setNumsLoc] = useState([248, 285, 321]);
   const [numLocLR, setNumLocLR] = useState(290);
   const [leverage, setLeverage] = useState(75);
-
+  const [tangu, setTangu] = useState(false);
+  
   function downLoad() {
     console.log("download started!");
     const name =
@@ -167,8 +168,8 @@ function Image({
         <div
           style={{
             position: "absolute",
-            left: "47px",
-            top: "140px",
+            left: "43px",
+            top: "135px",
             fontSize: "20px",
             color: "white",
             fontFamily: "HarmonyOS Sans",
@@ -182,7 +183,7 @@ function Image({
             position: "absolute",
             right: numLocLR + "px",
             top: numsLoc[0] + "px",
-            fontSize: "20px",
+            fontSize: "19px",
             color: "white",
             fontFamily: "HarmonyOS Sans",
             fontWeight: "500",
@@ -226,7 +227,7 @@ function Image({
             style={{
               position: "absolute",
               left: "40px",
-              top: "192px",
+              top: "150px",
               fontSize: "37px",
               color: "rgb(31, 163, 178)",
               fontFamily: "HarmonyOS Sans",
@@ -236,7 +237,7 @@ function Image({
             {result > 0 ? (
               <span
                 style={{
-                  fontSize: "38px",
+                  fontSize: "37px",
                   fontWeight: "400",
                 }}
               >
@@ -248,7 +249,7 @@ function Image({
             {result}
             <span
               style={{
-                fontSize: "24px",
+                fontSize: "23px",
                 fontWeight: "500",
               }}
             >
