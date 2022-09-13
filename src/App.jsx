@@ -259,7 +259,7 @@ function Image({
       <br />
       <br />
       <div>
-        <i>Made By</i> <b>Jung Ji ho </span>
+        <i>Made By</i> <b>Jung Ji Ho</span>
       </div>
     </div>
   );
