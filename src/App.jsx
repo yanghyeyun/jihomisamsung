@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./App.css";
 import bgLong from "./bg_long.png";
 import bgShort from "./bg_short.png";
+import tanguPic from "./tangu.png";
 import html2canvas from "html2canvas";
 
 function App() {
@@ -9,8 +10,8 @@ function App() {
   const [entryPrice, setEntryPrice] = useState(22898.0);
   const [closingPrice, setClosingPrice] = useState(23000.0);
   const [isLong, setIsLong] = useState(true);
-  const [numsLoc, setNumsLoc] = useState([267, 306, 349]);
-  const [numLocLR, setNumLocLR] = useState(300);
+  const [numsLoc, setNumsLoc] = useState([248, 285, 321]);
+  const [numLocLR, setNumLocLR] = useState(290);
   const [leverage, setLeverage] = useState(75);
 
   function downLoad() {
@@ -194,7 +195,7 @@ function Image({
             position: "absolute",
             right: numLocLR + "px",
             top: numsLoc[1] + "px",
-            fontSize: "20px",
+            fontSize: "19px",
             color: "white",
             fontFamily: "HarmonyOS Sans",
             fontWeight: "500",
@@ -207,7 +208,7 @@ function Image({
             position: "absolute",
             right: numLocLR + "px",
             top: numsLoc[2] + "px",
-            fontSize: "20px",
+            fontSize: "19px",
             color: "white",
             fontFamily: "HarmonyOS Sans",
             fontWeight: "500",
@@ -226,7 +227,7 @@ function Image({
               position: "absolute",
               left: "40px",
               top: "192px",
-              fontSize: "38px",
+              fontSize: "37px",
               color: "rgb(31, 163, 178)",
               fontFamily: "HarmonyOS Sans",
               fontWeight: "500",
@@ -255,6 +256,11 @@ function Image({
             </span>
           </div>
         </div>
+      </div>
+      <br />
+      <br />
+      <div>
+        <i>Made By</i> <b>Jung Ji </b><span onClick={() => setTangu(!tangu)}><b>Ho</b></span>
       </div>
     </div>
   );
