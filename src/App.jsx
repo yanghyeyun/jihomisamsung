@@ -247,7 +247,7 @@ function Image({
             {result}
             <span
               style={{
-                fontSize: "23px",
+                fontSize: "45px",
                 fontWeight: "500",
               }}
             >
@@ -259,8 +259,6 @@ function Image({
       <br />
       <br />
       <div>
-        <i>Made By</i> <b>Jung Ji Ho</b>
-      </div>
     </div>
   );
 }
