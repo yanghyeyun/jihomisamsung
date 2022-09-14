@@ -258,7 +258,6 @@ function Image({
       </div>
       <br />
       <br />
-      </div>
     </div>
   );
 }
