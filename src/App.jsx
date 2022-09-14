@@ -168,7 +168,7 @@ function Image({
             position: "absolute",
             left: "43px",
             top: "135px",
-            fontSize: "20px",
+            fontSize: "19px",
             color: "white",
             fontFamily: "HarmonyOS Sans",
             fontWeight: "500",
@@ -181,7 +181,7 @@ function Image({
             position: "absolute",
             right: numLocLR + "px",
             top: numsLoc[0] + "px",
-            fontSize: "19px",
+            fontSize: "18px",
             color: "white",
             fontFamily: "HarmonyOS Sans",
             fontWeight: "500",
@@ -194,7 +194,7 @@ function Image({
             position: "absolute",
             right: numLocLR + "px",
             top: numsLoc[1] + "px",
-            fontSize: "19px",
+            fontSize: "18px",
             color: "white",
             fontFamily: "HarmonyOS Sans",
             fontWeight: "500",
@@ -207,7 +207,7 @@ function Image({
             position: "absolute",
             right: numLocLR + "px",
             top: numsLoc[2] + "px",
-            fontSize: "19px",
+            fontSize: "18px",
             color: "white",
             fontFamily: "HarmonyOS Sans",
             fontWeight: "500",
@@ -235,7 +235,7 @@ function Image({
             {result > 0 ? (
               <span
                 style={{
-                  fontSize: "45px",
+                  fontSize: "40px",
                   fontWeight: "400",
                 }}
               >
@@ -247,7 +247,7 @@ function Image({
             {result}
             <span
               style={{
-                fontSize: "25px",
+                fontSize: "22px",
                 fontWeight: "500",
               }}
             >
