@@ -109,6 +109,7 @@ function App() {
       <br />
       <button onClick={downLoad}>다운로드</button>
       <br />
+      <div class="iframebox"> <iframe src="https://www.bitget.com/en/mix/usdt/BTCUSDT_UMCBL" frameborder="0" allowfullscreen></iframe></div>
       <br />
       <Image
         entryPrice={entryPrice}
