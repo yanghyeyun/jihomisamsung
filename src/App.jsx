@@ -10,7 +10,7 @@ function App() {
   const [closingPrice, setClosingPrice] = useState(23000.0);
   const [isLong, setIsLong] = useState(true);
   const [numsLoc, setNumsLoc] = useState([248, 285, 321]);
-  const [numLocLR, setNumLocLR] = useState(270);
+  const [numLocLR, setNumLocLR] = useState(305);
   const [leverage, setLeverage] = useState(75);
   
   function downLoad() {
