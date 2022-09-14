@@ -226,7 +226,7 @@ function Image({
               position: "absolute",
               left: "40px",
               top: "170px",
-              fontSize: "45px",
+              fontSize: "40px",
               color: "rgb(31, 163, 178)",
               fontFamily: "HarmonyOS Sans",
               fontWeight: "500",
@@ -247,7 +247,7 @@ function Image({
             {result}
             <span
               style={{
-                fontSize: "22px",
+                fontSize: "20px",
                 fontWeight: "500",
               }}
             >
