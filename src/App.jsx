@@ -247,7 +247,7 @@ function Image({
             {result}
             <span
               style={{
-                fontSize: "37px",
+                fontSize: "25px",
                 fontWeight: "500",
               }}
             >
