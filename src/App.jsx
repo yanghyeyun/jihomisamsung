@@ -235,6 +235,24 @@ function App() {
               }}
             >
              </div>
+ 
+          <div
+            style={{
+              position: "relative",
+            }}
+          >
+            <div
+              style={{
+                position: "absolute",
+                left: "40px",
+                top: "170px",
+                fontSize: 40 + "px",
+                color: "rgb(31, 163, 178)",
+                fontFamily: "HarmonyOS Sans",
+                fontWeight: "500",
+
+              }}
+            >
               {result > 0 ? (
                 <span
                   style={{
@@ -257,7 +275,7 @@ function App() {
                 %
               </span>
             </div>
-          </div>
+          </div> 
       </div>
       <br />
       <br />
