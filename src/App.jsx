@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./App.css";
 import bgLong from "./bg_long.png";
 import bgShort from "./bg_short.png";
+import tanguPic from "./tangu.png";
 import html2canvas from "html2canvas";
 
 function App() {
@@ -12,8 +13,24 @@ function App() {
   const [numsLoc, setNumsLoc] = useState([248, 285, 321]);
   const [numLocLR, setNumLocLR] = useState(315);
   const [leverage, setLeverage] = useState(75);
-  const [Date, setDate] = usestate(10/25/2022);
-  
+  const [result, setResult] = useState(
+    ((closingPrice / entryPrice - 1) * 75 * 100).toFixed(2)
+  );
+  const [tangu, setTangu] = useState(false);
+
+  useEffect(() => {
+    const calculated = (
+      (closingPrice / entryPrice - 1) *
+      leverage *
+      100
+    ).toFixed(2);
+    if (!isLong && calculated < 0) {
+      setResult(-calculated);
+    } else {
+      setResult(calculated);
+    }
+  }, [entryPrice, closingPrice, coin, isLong, leverage]);
+
   function downLoad() {
     console.log("download started!");
     const name =
@@ -48,6 +65,7 @@ function App() {
   function right() {
     setNumLocLR(numLocLR - 1);
   }
+
 
   const onSaveAs = (uri, filename) => {
     var link = document.createElement("a");
@@ -95,13 +113,6 @@ function App() {
           onChange={(e) => setClosingPrice(e.target.value)}
         />
       </span>
-      &nbsp;&nbsp;&nbsp;&nbsp; 
-      <span>
-        날짜 &nbsp;
-        <input
-         value={date}
-         nChange={(e) => setDate(e.target.value)}
-        />
       <br />
       <br />
       <button onClick={up}>숫자 위로</button>
@@ -118,54 +129,10 @@ function App() {
       <button onClick={downLoad}>다운로드</button>
       <br />
       <br />
-      <Image
-        entryPrice={entryPrice}
-        closingPrice={closingPrice}
-        coin={coin}
-        isLong={isLong}
-        numsLoc={numsLoc}
-        numLocLR={numLocLR}
-        leverage={leverage}
-        date={date}
-      />
-      <br />
-      <br />
-      <div><i>Made By</i> <b>Jung Ji Ho</b></div>
-  );
-}
-
-function Image({
-  entryPrice,
-  closingPrice,
-  coin,
-  isLong,
-  numsLoc,
-  numLocLR,
-  leverage,
-  date,
-}){
-  
-  const [result, setResult] = useState(
-    ((closingPrice / entryPrice - 1) * 75 * 100).toFixed(2)
-  );
-  useEffect(() => {
-    const calculated = (
-      (closingPrice / entryPrice - 1) *
-      leverage *
-      100
-    ).toFixed(2);
-    if (!isLong && calculated < 0) {
-      setResult(-calculated);
-    } else {
-      setResult(calculated);
-    }
-  }, [entryPrice, closingPrice, coin, isLong, leverage, date]);
-  return (
-    <div>
       <div
         id="image"
         style={{
-          backgroundImage: `url(${isLong ? bgLong : bgShort})`,
+          backgroundImage: `url(${tangu ? tanguPic : (isLong ? bgLong : bgShort)})`,
           backgroundSize: "cover",
           height: "570px",
           width: "570px",
@@ -173,119 +140,111 @@ function Image({
           position: "relative",
         }}
       >
-        <div
-          style={{
-            position: "absolute",
-            left: "43px",
-            top: "135px",
-            fontSize: "19px",
-            color: "white",
-            fontFamily: "HarmonyOS Sans",
-            fontWeight: "500",
-          }}
-        >
-          {coin}
-        </div>
-        <div
-          style={{
-            position: "absolute",
-            right: numLocLR + "px",
-            top: numsLoc[0] + "px",
-            fontSize: "18px",
-            color: "white",
-            fontFamily: "HarmonyOS Sans",
-            fontWeight: "500",
-          }}
-        >
-          {leverage}X
-        </div>
-        <div
-          style={{
-            position: "absolute",
-            right: numLocLR + "px",
-            top: numsLoc[1] + "px",
-            fontSize: "18px",
-            color: "white",
-            fontFamily: "HarmonyOS Sans",
-            fontWeight: "500",
-          }}
-        >
-          ₮{entryPrice}
-        </div>
-        <div
-          style={{
-            position: "absolute",
-            right: numLocLR + "px",
-            top: numsLoc[2] + "px",
-            fontSize: "18px",
-            color: "white",
-            fontFamily: "HarmonyOS Sans",
-            fontWeight: "500",
-          }}
-        >
-          ₮{closingPrice}
-        </div>
 
-        <div
-          style={{
-            position: "relative",
-          }}
-        >
           <div
             style={{
               position: "absolute",
-              left: "40px",
-              top: "170px",
-              fontSize: "40px",
-              color: "rgb(31, 163, 178)",
+              left: "43px",
+              top: "135px",
+              fontSize: 19 + "px",
+              color: "white",
               fontFamily: "HarmonyOS Sans",
               fontWeight: "500",
+
             }}
           >
-            {date}
-        </div>
-
-        <div
-          style={{
-            position: "relative",
-          }}
-        >
+            {coin}
+          </div>
+         
           <div
             style={{
               position: "absolute",
-              left: "60px",
-              top: "200px",
-              fontSize: "40px",
-              color: "rgb(126, 126, 126)",
+              right: numLocLR + "px",
+              top: numsLoc[0] + "px",
+              fontSize: 18 + "px",
+              color: "white",
               fontFamily: "HarmonyOS Sans",
               fontWeight: "500",
+
             }}
-            {result > 0 ? (
-              <span
-                style={{
-                  fontSize: "40px",
-                  fontWeight: "400",
-                }}
-              >
-                +
-              </span>
-            ) : (
-              ""
-            )}
-            {result}
-            <span
+          >
+            {leverage}X
+          </div>
+          <div
+            style={{
+              position: "absolute",
+              right: numLocLR + "px",
+              top: numsLoc[1] + "px",
+              fontSize: 18 + "px",
+              color: "white",
+              fontFamily: "HarmonyOS Sans",
+              fontWeight: "500",
+
+            }}
+          >
+            ₮{entryPrice}
+          </div>
+          <div
+            style={{
+              position: "absolute",
+              right: numLocLR + "px",
+              top: numsLoc[2] + "px",
+              fontSize: 18 + "px",
+              color: "white",
+              fontFamily: "HarmonyOS Sans",
+              fontWeight: "500",
+
+            }}
+          >
+            ₮{closingPrice}
+          </div>
+
+          <div
+            style={{
+              position: "relative",
+            }}
+          >
+            <div
               style={{
-                fontSize: "20px",
+                position: "absolute",
+                left: "40px",
+                top: "170px",
+                fontSize: 40 + "px",
+                color: "rgb(31, 163, 178)",
+                fontFamily: "HarmonyOS Sans",
                 fontWeight: "500",
+
               }}
             >
-              %
-            </span>
+              {result > 0 ? (
+                <span
+                  style={{
+                    fontSize: 40 + "px",
+                    fontWeight: "400",
+                  }}
+                >
+                  +
+                </span>
+              ) : (
+              ""
+              )}
+              {result}
+              <span
+                style={{
+                  fontSize: 20 + "px",
+                  fontWeight: "500",
+                }}
+              >
+                %
+              </span>
+            </div>
           </div>
-        </div>
       </div>
       <br />
       <br />
+      <div>
+        <i>Made By</i> <b>Jung Ji </b><span onClick={() => setTangu(!tangu)}><b>Ho</b></span>
+      </div>
     </div>
   );
 }
