@@ -114,6 +114,12 @@ function App() {
           onChange={(e) => setClosingPrice(e.target.value)}
         />
       </span>
+      <span>
+        날짜시간 &nbsp;
+        <input
+         value={date}
+         onChange={(e) => setdate(e.target.value)}
+      </span>  
       <br />
       <br />
       <button onClick={up}>숫자 위로</button>
