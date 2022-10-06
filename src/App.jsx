@@ -114,6 +114,8 @@ function App() {
           onChange={(e) => setClosingPrice(e.target.value)}
         />
       </span>
+      <br />
+      <br />
       <span>
         날짜시간 &nbsp;
         <input
