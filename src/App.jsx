@@ -155,7 +155,7 @@ function App() {
             style={{
               position: "absolute",
               left: "90px",
-              top: "160px",
+              top: "163px",
               fontSize:"40px",
               color: "white",
               fontFamily: "HarmonyOS Sans",
