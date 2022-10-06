@@ -253,7 +253,6 @@ function App() {
 
               }}
             >
-              }
               {result}
               <span
                 style={{
