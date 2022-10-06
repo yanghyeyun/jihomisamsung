@@ -126,7 +126,7 @@ function App() {
         numsLoc={numsLoc}
         numLocLR={numLocLR}
         leverage={leverage}
-        date={"Share time"]
+        date={date]
       />
       <br />
       <br />
