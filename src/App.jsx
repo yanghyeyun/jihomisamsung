@@ -142,8 +142,8 @@ function Image({
   numsLoc,
   numLocLR,
   leverage,
-}) 
-{
+  date,
+}){
   const [result, setResult] = useState(
     ((closingPrice / entryPrice - 1) * 75 * 100).toFixed(2)
   );
