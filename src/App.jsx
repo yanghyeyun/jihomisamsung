@@ -222,24 +222,6 @@ function App() {
           >
             {date}
           </div>
-
-          <div
-            style={{
-              position: "relative",
-            }}
-          >
-            <div
-              style={{
-                position: "absolute",
-                left: "40px",
-                top: "170px",
-                fontSize: 40 + "px",
-                color: "rgb(31, 163, 178)",
-                fontFamily: "HarmonyOS Sans",
-                fontWeight: "500",
-
-              }}
-            >
               <span
                 style={{
                   fontSize: 20 + "px",
