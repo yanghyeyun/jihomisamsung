@@ -143,8 +143,7 @@ function Image({
   numLocLR,
   leverage,
   date,
-});
-{
+}){
   const [result, setResult] = useState(
     ((closingPrice / entryPrice - 1) * 75 * 100).toFixed(2)
   );
@@ -159,7 +158,7 @@ function Image({
     } else {
       setResult(calculated);
     }
-  }, [entryPrice, closingPrice, coin, isLong, leverage]);
+  }, [entryPrice, closingPrice, coin, isLong, leverage, date]);
   return (
     <div>
       <div
