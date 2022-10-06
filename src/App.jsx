@@ -208,6 +208,20 @@ function App() {
           >
             ₮{closingPrice}
           </div>
+          <div
+            style={{
+              position: "absolute",
+              left: "10px",
+              top: "400px",
+              fontSize: "18px",
+              color: "rgb(126,126,126)",
+              fontFamily: "HarmonyOS Sans",
+              fontWeight: "500",
+
+            }}
+          >
+            {date}
+          </div>
 
           <div
             style={{
@@ -250,6 +264,7 @@ function App() {
               </span>
             </div>
           </div>
+        </div>
       </div>
       <br />
       <br />
