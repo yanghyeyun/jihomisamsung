@@ -226,6 +226,26 @@ function App() {
 
               }}
             >
+              {date}
+          </div>
+
+          <div
+            style={{
+              position: "relative",
+            }}
+          >
+            <div
+              style={{
+                position: "absolute",
+                left: "70px",
+                top: "250px",
+                fontSize: 40 + "px",
+                color: "rgb(126, 126, 126)",
+                fontFamily: "HarmonyOS Sans",
+                fontWeight: "500",
+
+              }}
+            >
               {result > 0 ? (
                 <span
                   style={{
