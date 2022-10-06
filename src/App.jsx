@@ -223,6 +223,11 @@ function App() {
             {date}
           </div>
            <div
+            style={{
+              position: "relative",
+            }}
+          >
+            <div
               style={{
                 position: "absolute",
                 left: "40px",
@@ -257,7 +262,6 @@ function App() {
               </span>
             </div>
           </div> 
-        </div> 
       </div>
       <br />
       <br />
