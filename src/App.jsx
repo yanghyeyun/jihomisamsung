@@ -234,6 +234,7 @@ function App() {
 
               }}
             >
+             </div>
               {result > 0 ? (
                 <span
                   style={{
