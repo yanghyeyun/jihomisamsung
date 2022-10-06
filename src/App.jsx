@@ -12,6 +12,7 @@ function App() {
   const [numsLoc, setNumsLoc] = useState([248, 285, 321]);
   const [numLocLR, setNumLocLR] = useState(315);
   const [leverage, setLeverage] = useState(75);
+  const [Date, setDate] = usestate(10/25/2022, 17:17:21);
   
   function downLoad() {
     console.log("download started!");
@@ -94,6 +95,12 @@ function App() {
           onChange={(e) => setClosingPrice(e.target.value)}
         />
       </span>
+      &nbsp;&nbsp;&nbsp;&nbsp; 
+      <span>
+        날짜 &nbsp;
+        <input
+         value={date}
+         nChange={(e) => setDate(e.target.value)}
       <br />
       <br />
       <button onClick={up}>숫자 위로</button>
@@ -118,6 +125,7 @@ function App() {
         numsLoc={numsLoc}
         numLocLR={numLocLR}
         leverage={leverage}
+        date={Share time]
       />
       <br />
       <br />
@@ -232,6 +240,24 @@ function Image({
               fontWeight: "500",
             }}
           >
+            {Share time}
+        </div>
+
+        <div
+          style={{
+            position: "relative",
+          }}
+        >
+          <div
+            style={{
+              position: "absolute",
+              left: "60px",
+              top: "200px",
+              fontSize: "40px",
+              color: "rgb(126, 126, 126)",
+              fontFamily: "HarmonyOS Sans",
+              fontWeight: "500",
+            }}
             {result > 0 ? (
               <span
                 style={{
