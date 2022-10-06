@@ -241,7 +241,7 @@ function Image({
               fontWeight: "500",
             }}
           >
-            {Share time}
+            {date}
         </div>
 
         <div
