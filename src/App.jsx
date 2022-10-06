@@ -12,7 +12,7 @@ function App() {
   const [numsLoc, setNumsLoc] = useState([248, 285, 321]);
   const [numLocLR, setNumLocLR] = useState(315);
   const [leverage, setLeverage] = useState(75);
-  const [Date, setDate] = usestate(10/25/2022, 17:17:21);
+  const [Date, setDate] = usestate(10/25/2022);
   
   function downLoad() {
     console.log("download started!");
