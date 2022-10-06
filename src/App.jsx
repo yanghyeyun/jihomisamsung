@@ -101,6 +101,7 @@ function App() {
         <input
          value={date}
          nChange={(e) => setDate(e.target.value)}
+        />
       <br />
       <br />
       <button onClick={up}>숫자 위로</button>
