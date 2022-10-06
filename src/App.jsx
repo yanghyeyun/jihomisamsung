@@ -119,6 +119,7 @@ function App() {
         <input
          value={date}
          onChange={(e) => setdate(e.target.value)}
+         />
       </span>  
       <br />
       <br />
