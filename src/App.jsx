@@ -212,8 +212,8 @@ function App() {
             style={{
               position: "absolute",
               left: "250px",
-              top: "750px",
-              fontSize: "18px",
+              top: "740px",
+              fontSize: "25px",
               color: "white",
               fontFamily: "HarmonyOS Sans",
               fontWeight: "500",
