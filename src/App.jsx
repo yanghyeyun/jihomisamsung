@@ -131,7 +131,6 @@ function App() {
       <br />
       <br />
       <div><i>Made By</i> <b>Jung Ji Ho</b></div>
-    </div>
   );
 }
 
