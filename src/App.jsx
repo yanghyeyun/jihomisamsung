@@ -185,8 +185,8 @@ function App() {
               position: "absolute",
               right: numLocLR +200 + "px",
               top: numsLoc[1] + "px",
-              fontSize: "100px",
-              color: "rgb(4, 191, 136)",
+              fontSize: "25px",
+              color: "white",
               fontFamily: "HarmonyOS Sans",
               fontWeight: "500",
 
