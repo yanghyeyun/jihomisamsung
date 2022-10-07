@@ -61,10 +61,10 @@ function App() {
     setNumsLoc([one, two, three]);
   }
   function left() {
-    setNumLocLR(numLocLR + 1);
+    setNumLocLR(numLocLR - 1);
   }
   function right() {
-    setNumLocLR(numLocLR - 1);
+    setNumLocLR(numLocLR + 1);
   }
 
 
