@@ -10,7 +10,7 @@ function App() {
   const [entryPrice, setEntryPrice] = useState(22898.0);
   const [closingPrice, setClosingPrice] = useState(23000.0);
   const [isLong, setIsLong] = useState(true);
-  const [numsLoc, setNumsLoc] = useState([230, 580, 600]);
+  const [numsLoc, setNumsLoc] = useState([230, 580, 580]);
   const [numLocLR, setNumLocLR] = useState(1000);
   const [leverage, setLeverage] = useState(75);
   const [date, setdate] = useState("10/10/2022, 17:17:17")
@@ -183,7 +183,7 @@ function App() {
           <div
             style={{
               position: "absolute",
-              left: numLocLR -915 + "px",
+              left: numLocLR - 915 + "px",
               top: numsLoc[1] + "px",
               fontSize: "25px",
               color: "white",
@@ -197,9 +197,9 @@ function App() {
           <div
             style={{
               position: "absolute",
-              right: numLocLR + "px",
+              right: numLocLR - 715 + "px",
               top: numsLoc[2] + "px",
-              fontSize: 18 + "px",
+              fontSize: "25px",
               color: "white",
               fontFamily: "HarmonyOS Sans",
               fontWeight: "500",
