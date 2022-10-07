@@ -232,7 +232,7 @@ function App() {
                 position: "absolute",
                 left: "40px",
                 top: "420px",
-                fontSize: "200",
+                fontSize: "200px",
                 color: "rgb(4, 191, 136)",
                 fontFamily: "HarmonyOS Sans",
                 fontWeight: "500",
