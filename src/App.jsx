@@ -192,7 +192,7 @@ function App() {
 
             }}
           >
-            ₮{entryPrice}
+            ₮ {entryPrice}
           </div>
           <div
             style={{
@@ -206,7 +206,7 @@ function App() {
 
             }}
           >
-            ₮{closingPrice}
+            ₮ {closingPrice}
           </div>
           <div
             style={{
