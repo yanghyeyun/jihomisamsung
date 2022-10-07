@@ -236,7 +236,7 @@ function App() {
                 color: "rgb(4, 191, 136)",
                 fontFamily: "HarmonyOS Sans",
                 fontWeight: "700",
-
+              (
               }}
             >
               <span
