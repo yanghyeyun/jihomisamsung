@@ -171,7 +171,7 @@ function App() {
               position: "absolute",
               right: numLocLR + 120 + "px",
               top: numsLoc[0] + "px",
-              fontSize: "20px",
+              fontSize: "25px",
               color: "RGB(126,126,126)",
               fontFamily: "HarmonyOS Sans",
               fontWeight: "500",
