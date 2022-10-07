@@ -171,10 +171,10 @@ function App() {
               position: "absolute",
               left: numLocLR - 800 + "px",
               top: numsLoc[0] + "px",
-              fontSize: "25px",
+              fontSize: "23px",
               color: "RGB(126,126,126)",
               fontFamily: "HarmonyOS Sans",
-              fontWeight: "500",
+              fontWeight: "550",
 
             }}
           >
