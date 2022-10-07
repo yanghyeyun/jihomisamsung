@@ -239,19 +239,6 @@ function App() {
 
               }}
             >
-              {result > 0 ? (
-                <span
-                  style={{
-                    fontSize: "125px",
-                    fontWeight: "700",
-                  }}
-                >
-                  +
-                </span>
-              ) : (
-              ""
-              )}
-              {result}
               <span
                 style={{
                   fontSize: "125px",
@@ -260,7 +247,6 @@ function App() {
               >
                 %
               </span>
-            </div>
           </div> 
       </div>
       <br />
