@@ -184,7 +184,7 @@ function App() {
             style={{
               position: "absolute",
               left: numLocLR - 915 - "px",
-              top: numsLoc[1] - "px",
+              top: numsLoc[1] + "px",
               fontSize: "25px",
               color: "white",
               fontFamily: "HarmonyOS Sans",
@@ -198,7 +198,7 @@ function App() {
             style={{
               position: "absolute",
               left: numLocLR - 730 - "px",
-              top: numsLoc[2] - "px",
+              top: numsLoc[2] + "px",
               fontSize: "25px",
               color: "white",
               fontFamily: "HarmonyOS Sans",
