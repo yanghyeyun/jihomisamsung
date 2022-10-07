@@ -231,7 +231,7 @@ function App() {
               style={{
                 position: "absolute",
                 left: "80px",
-                top: "380px",
+                top: "375px",
                 fontSize: "100px",
                 color: "rgb(4, 191, 136)",
                 fontFamily: "HarmonyOS Sans",
@@ -255,7 +255,7 @@ function App() {
               <span
                 style={{
                   fontSize: "100px",
-                  fontWeight: "500",
+                  fontWeight: "400",
                 }}
               >
                 %
