@@ -227,37 +227,41 @@ function App() {
               position: "relative",
             }}
           >
-            <div
+                <div
               style={{
                 position: "absolute",
                 left: "80px",
                 top: "345px",
-                fontSize: "125px",
+                fontSize: "125",
                 color: "rgb(4, 191, 136)",
                 fontFamily: "HarmonyOS Sans",
                 fontWeight: "700",
+
               }}
             >
-            {result > 0 ? (
-            <span
-            style={{
-                  fontSize: "125px",
-                  fontWeight: "700",
-                 }}
-                 >
-                 +
-               </span> 
-               ):(
+              {result > 0 ? (
+                <span
+                  style={{
+                    fontSize: "125px",
+                    fontWeight: "700",
+                  }}
+                >
+                  +
+                </span>
+              ) : (
+              ""
+              )}
+              {result}
               <span
                 style={{
-                  fontSize: "125px",
-                  fontWeight: "700",
+                    fontSize: "125px",
+                    fontWeight: "700",
                 }}
               >
                 %
-              </span> 
-           </div> 
-         </div>
+              </span>
+            </div>
+          </div> 
       </div>
       <br />
       <br />
