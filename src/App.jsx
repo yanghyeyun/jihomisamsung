@@ -247,6 +247,7 @@ function App() {
                  >
                  +
                </span> 
+               ):(
               <span
                 style={{
                   fontSize: "125px",
