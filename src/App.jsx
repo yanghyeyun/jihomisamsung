@@ -10,7 +10,7 @@ function App() {
   const [entryPrice, setEntryPrice] = useState(22898.0);
   const [closingPrice, setClosingPrice] = useState(23000.0);
   const [isLong, setIsLong] = useState(true);
-  const [numsLoc, setNumsLoc] = useState([235, 285, 321]);
+  const [numsLoc, setNumsLoc] = useState([232, 285, 321]);
   const [numLocLR, setNumLocLR] = useState(1000);
   const [leverage, setLeverage] = useState(75);
   const [date, setdate] = useState("10/10/2022, 17:17:17")
