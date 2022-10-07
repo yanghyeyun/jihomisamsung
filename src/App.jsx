@@ -10,7 +10,7 @@ function App() {
   const [entryPrice, setEntryPrice] = useState(22898.0);
   const [closingPrice, setClosingPrice] = useState(23000.0);
   const [isLong, setIsLong] = useState(true);
-  const [numsLoc, setNumsLoc] = useState([248, 285, 321]);
+  const [numsLoc, setNumsLoc] = useState([240, 285, 321]);
   const [numLocLR, setNumLocLR] = useState(1000);
   const [leverage, setLeverage] = useState(75);
   const [date, setdate] = useState("10/10/2022, 17:17:17")
@@ -171,7 +171,7 @@ function App() {
               position: "absolute",
               right: numLocLR + 120 + "px",
               top: numsLoc[0] + "px",
-              fontSize: 18 + "px",
+              fontSize: "20px",
               color: "RGB(126,126,126)",
               fontFamily: "HarmonyOS Sans",
               fontWeight: "500",
