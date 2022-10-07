@@ -183,8 +183,8 @@ function App() {
           <div
             style={{
               position: "absolute",
-              left: numLocLR - 915 + "px",
-              top: numsLoc[1] + "px",
+              left: numLocLR - 915 - "px",
+              top: numsLoc[1] - "px",
               fontSize: "25px",
               color: "white",
               fontFamily: "HarmonyOS Sans",
@@ -197,8 +197,8 @@ function App() {
           <div
             style={{
               position: "absolute",
-              left: numLocLR - 700 + "px",
-              top: numsLoc[2] + "px",
+              left: numLocLR - 730 - "px",
+              top: numsLoc[2] - "px",
               fontSize: "25px",
               color: "white",
               fontFamily: "HarmonyOS Sans",
