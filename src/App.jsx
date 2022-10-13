@@ -13,7 +13,7 @@ function App() {
   const [numsLoc, setNumsLoc] = useState([227, 570, 570]);
   const [numLocLR, setNumLocLR] = useState(1000);
   const [leverage, setLeverage] = useState(75);
-  const [date, setdate] = useState(new Date().toLocaleString('en-US', { hour12: false,}).setInterval(date, 1000));
+  const [date, setdate] = useState(new Date().toLocaleString('en-US', { hour12: false,}));
   const [result, setResult] = useState(
     ((closingPrice / entryPrice - 1) * 75 * 100).toFixed(2)
   );
