@@ -5,8 +5,5 @@ import html2canvas from "html2canvas";
 <div>
    <b>JIHOMI</b>
       </div>
-    </div>
-  );
-}
 
 export default App;
