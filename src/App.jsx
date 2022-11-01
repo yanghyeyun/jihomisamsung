@@ -7,12 +7,12 @@ import html2canvas from "html2canvas";
 
 function App() {
   const [coin, setCoin] = useState("BTCUSDT");
-  const [entryPrice, setEntryPrice] = useState("22898.50");
-  const [closingPrice, setClosingPrice] = useState("23000.50");
+  const [entryPrice, setEntryPrice] = useState("20868");
+  const [closingPrice, setClosingPrice] = useState("20681");
   const [isLong, setIsLong] = useState(true);
   const [numsLoc, setNumsLoc] = useState([227, 570, 570]);
   const [numLocLR, setNumLocLR] = useState(1000);
-  const [leverage, setLeverage] = useState(75);
+  const [leverage, setLeverage] = useState(50);
   const [date, setdate] = useState(new Date().toLocaleString('en-US', { hour12: false,}));
   const [result, setResult] = useState(
     ((closingPrice / entryPrice - 1) * 75 * 100).toFixed(2)
@@ -192,7 +192,7 @@ function App() {
 
             }}
           >
-             ₮ {entryPrice.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')}
+            ₮ {entryPrice.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')}
           </div>
           <div
             style={{
