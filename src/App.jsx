@@ -225,7 +225,7 @@ function App() {
               left: numLocLR - 915 + "px",
               top: numsLoc[1] + "px",
               fontSize: "30px",
-              color: "white",
+              color: "black",
               fontFamily: "HarmonyOS Sans",
               fontWeight: "500",
 
