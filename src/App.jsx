@@ -10,7 +10,7 @@ function App() {
   const [name, setname] = useState("NU");
   const [askPrice, setaskPrice] = useState("500");
   const [bidPrice, setbidPrice] = useState("550");
-  const [maxPrice, maxbidPrice] = useState("100000");
+  const [maxPrice, maxPrice] = useState("100000");
   const [coincount, setcoincount] = useState(((maxbidPrice/askPrice) - (maxbidPrice/askPrice*0.0005)).toFixed(6));
   const [isLong, setIsLong] = useState(true);
   const [numsLoc, setNumsLoc] = useState([227, 570, 570]);
@@ -112,7 +112,15 @@ function App() {
         매수금액 &nbsp;
         <input
           value={entryPrice}
-          onChange={(e) => maxbidPrice(e.target.value)}
+          onChange={(e) => setmaxPrice(e.target.value)}
+        />
+      </span>
+      &nbsp;&nbsp;&nbsp;&nbsp;
+      <span>
+        매도금액 &nbsp;
+        <input
+          value={entryPrice}
+          onChange={(e) => setbidPrice(e.target.value)}
         />
       </span>
       &nbsp;&nbsp;&nbsp;&nbsp;
@@ -192,7 +200,7 @@ function App() {
 
             }}
           >
-            ₮ {entryPrice.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')}
+            ₮ {askPrice.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')}
           </div>
           <div
             style={{
@@ -206,7 +214,7 @@ function App() {
 
             }}
           >
-            ₮ {closingPrice.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')}
+            ₮ {maxPrice.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')}
           </div>
           <div
             style={{
