@@ -11,7 +11,7 @@ function App() {
   const [askPrice, setaskPrice] = useState("500");
   const [bidPrice, setbidPrice] = useState("550");
   const [maxPrice, maxbidPrice] = useState("100000");
-  const [coincount, coincount] = useState(((maxbidPrice/askPrice) - (maxbidPrice/askPrice*0.0005)).toFixed(6));
+  const [coincount, setcoincount] = useState(((maxbidPrice/askPrice) - (maxbidPrice/askPrice*0.0005)).toFixed(6));
   const [isLong, setIsLong] = useState(true);
   const [numsLoc, setNumsLoc] = useState([227, 570, 570]);
   const [numLocLR, setNumLocLR] = useState(1000);
