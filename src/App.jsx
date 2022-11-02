@@ -176,7 +176,7 @@ function App() {
 
             }}
           >
-            {(enrtry.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')).tofixed(6)} 
+            {(entry.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')).tofixed(6)} 
            </div>          
                     <div
             style={{
@@ -190,7 +190,7 @@ function App() {
 
             }}
           >
-            {(aluePrice.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')).tofixed(0)}
+            {(valuePrice.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')).tofixed(0)}
           </div>
          
                 <div
@@ -262,7 +262,7 @@ function App() {
 
             }}
           >
-            {(aluePrice-maxPrice).toFixed(6)}
+            {(valuePrice-maxPrice).toFixed(6)}
           </div>
            <div
             style={{
