@@ -17,13 +17,13 @@ function App() {
   const [numLocLR, setNumLocLR] = useState(1000);
   const [leverage, setLeverage] = useState(50);
   const [result, setResult] = useState(
-    ((closingPrice / entryPrice - 1) * 75 * 100).toFixed(2)
+    ((bidPrice / askPrice - 1) * 75 * 100).toFixed(2)
   );
   const [tangu, setTangu] = useState(false);
 
   useEffect(() => {
     const calculated = (
-      (closingPrice / entryPrice - 1) *
+      (bidPrice / askPrice - 1) *
       leverage *
       100
     ).toFixed(2);
@@ -32,7 +32,7 @@ function App() {
     } else {
       setResult(calculated);
     }
-  }, [entryPrice, closingPrice, coin, isLong, leverage]);
+  }, [askPrice, bidPrice, coin, isLong, leverage]);
 
   function downLoad() {
     console.log("download started!");
@@ -40,9 +40,9 @@ function App() {
       (isLong ? "Long-" : "Short-") +
       coin +
       "-" +
-      entryPrice +
+      askPrice +
       "-" +
-      closingPrice;
+      bidPrice;
 
     const image = document.getElementById("image");
     html2canvas(image).then((canvas) => {
