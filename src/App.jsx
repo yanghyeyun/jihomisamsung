@@ -152,7 +152,7 @@ function App() {
               left: "85px",
               top: "160px",
               fontSize:"42px",
-              color: "rgb(0,0,0)",
+              color: "rgb(23,53,130)",
               fontFamily: "HarmonyOS Sans",
               fontWeight: "500",
 
@@ -196,7 +196,7 @@ function App() {
               left: "500px",
               top: "150px",
               fontSize: "28px",
-              color: "RGB(126,126,126)",
+              color: "RGB(23,53,130)",
               fontFamily: "HarmonyOS Sans",
               fontWeight: "500",
 
