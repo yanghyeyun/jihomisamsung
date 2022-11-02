@@ -174,7 +174,7 @@ function App() {
 
             }}
           >
-            {(entry.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')} 
+            {entry.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')} 
            </div>          
                     <div
             style={{
@@ -188,7 +188,7 @@ function App() {
 
             }}
           >
-            {(valuePrice.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')}
+            {valuePrice.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')}
           </div>
          
                 <div
