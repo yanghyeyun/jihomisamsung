@@ -180,7 +180,7 @@ function App() {
 
             }}
           >
-            {((Amount*bidPrice)-(Amount*bidPrice*0.0005)+1).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',').tofixed(0)}
+            {((Amount*bidPrice)-(Amount*bidPrice*0.0005)+1).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')}
           </div>
          
           <div
