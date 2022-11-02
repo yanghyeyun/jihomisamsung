@@ -18,11 +18,9 @@ function App() {
   const [result, setResult] = useState(
     ((bidPrice / askPrice - 1) * 75 * 100).toFixed(2)
   );
-  const [entry, setentry] = useState(
-    ((maxPrice/askPrice) - (maxPrice/askPrice)*0.0005));  //eslint-disable-line no-unused-vars
+  const [entry, setentry] = useState(((maxPrice/askPrice) - (maxPrice/askPrice)*0.0005));  //eslint-disable-line no-unused-vars
     
-  const [valuePrice, setvaluePrice] = useState(
-    ((entry*bidPrice) - ((entry*bidPrice)*0.0005)+1));   //eslint-disable-line no-unused-vars
+  const [valuePrice, setvaluePrice] = useState(((entry*bidPrice) - ((entry*bidPrice)*0.0005)+1));   //eslint-disable-line no-unused-vars
     
   const [tangu, setTangu] = useState(false);
 
