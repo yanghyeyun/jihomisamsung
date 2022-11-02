@@ -262,7 +262,7 @@ function App() {
 
             }}
           >
-            {(aluePrice-maxPrice)toFixed(6)}
+            {(aluePrice-maxPrice).toFixed(6)}
           </div>
            <div
             style={{
