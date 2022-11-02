@@ -186,7 +186,7 @@ function App() {
 
             }}
           >
-            {leverage}X
+            {coinname}
           </div>
           <div
             style={{
@@ -200,7 +200,7 @@ function App() {
 
             }}
           >
-            ₮ {askPrice.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')}
+           {askPrice.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')}
           </div>
           <div
             style={{
@@ -214,7 +214,7 @@ function App() {
 
             }}
           >
-            ₮ {maxPrice.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')}
+           {maxPrice.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')}
           </div>
           <div
             style={{
