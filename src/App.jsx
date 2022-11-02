@@ -90,7 +90,7 @@ function App() {
       &nbsp;&nbsp;&nbsp;&nbsp;
       <span>
         코인이름 &nbsp;
-        <input value={price} onChange={(e) => coinname(e.target.value)} />
+        <input value={price} onChange={(e) =>setprice(e.target.value)} />
       </span>
     &nbsp;&nbsp;&nbsp;&nbsp;
       <br />
