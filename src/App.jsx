@@ -11,7 +11,7 @@ function App() {
   const [askPrice, setaskPrice] = useState("500");
   const [bidPrice, setbidPrice] = useState("550");
   const [maxPrice, setmaxPrice] = useState("100000");
-  const [coincount, setcoincount] = useState(((maxbidPrice/askPrice) - (maxbidPrice/askPrice*0.0005)).toFixed(6));
+  const [coincount, setcoincount] = useState(((maxPrice/askPrice) - (maxPrice/askPrice*0.0005)).toFixed(6));
   const [isLong, setIsLong] = useState(true);
   const [numsLoc, setNumsLoc] = useState([227, 570, 570]);
   const [numLocLR, setNumLocLR] = useState(1000);
@@ -111,7 +111,7 @@ function App() {
       <span>
         매수금액 &nbsp;
         <input
-          value={entryPrice}
+          value={maxPrice}
           onChange={(e) => setmaxPrice(e.target.value)}
         />
       </span>
@@ -127,7 +127,7 @@ function App() {
       <span>
         평균단가 &nbsp;
         <input
-          value={closingPrice}
+          value={askPrice}
           onChange={(e) => setaskPrice(e.target.value)}
         />
       </span>
