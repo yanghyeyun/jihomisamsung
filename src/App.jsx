@@ -84,15 +84,6 @@ function App() {
   return (
     <div className="App">
       <span>
-        White(체크)/DARK(미체크) &nbsp;
-        <input
-          type="checkbox"
-          checked={isLong}
-          onChange={(e) => setIsLong(!isLong)}
-        />
-      </span>
-      &nbsp;&nbsp;&nbsp;&nbsp;
-      <span>
         코인종류 &nbsp;
         <input value={coin} onChange={(e) => setCoin(e.target.value)} />
       </span>
