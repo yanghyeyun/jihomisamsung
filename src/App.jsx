@@ -13,6 +13,7 @@ function App() {
   const [maxPrice, setmaxPrice] = useState("100000");
   const [Amount, setAmount] = useState(((maxPrice/askPrice) - (maxPrice/askPrice*0.0005)).toFixed(6)); //eslint-disable-line no-unused-vars
   const [proceeds, setproceeds] = useState(((Amount*bidPrice)-(Amount*bidPrice*0.0005)+1).toFixed(0)); //eslint-disable-line no-unused-vars
+  const [Valuation, setValuation] = useState(proceeds-Amount);
   const [isLong, setIsLong] = useState(true);
   const [numsLoc, setNumsLoc] = useState([227, 570, 570]);
   const [numLocLR, setNumLocLR] = useState(1000);
@@ -83,7 +84,7 @@ function App() {
   return (
     <div className="App">
       <span>
-        롱(체크)/숏(미체크) &nbsp;
+        White(체크)/DARK(미체크) &nbsp;
         <input
           type="checkbox"
           checked={isLong}
@@ -182,6 +183,23 @@ function App() {
             }}
           >
             {proceeds.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')}
+          </div>
+          
+           </div>
+          
+                    <div
+            style={{
+              position: "absolute",
+              left: "500px",
+              top: "250px",
+              fontSize:"42px",
+              color: "rgb(254,254,254)",
+              fontFamily: "HarmonyOS Sans",
+              fontWeight: "500",
+
+            }}
+          >
+            {Valuation}
           </div>
          
           <div
