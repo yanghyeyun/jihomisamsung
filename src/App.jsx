@@ -119,7 +119,7 @@ function App() {
       <span>
         매도금액 &nbsp;
         <input
-          value={entryPrice}
+          value={bidPrice}
           onChange={(e) => setbidPrice(e.target.value)}
         />
       </span>
