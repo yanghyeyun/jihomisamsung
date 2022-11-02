@@ -169,7 +169,7 @@ function App() {
           >
             {coin}
           </div>
-          
+
                     <div
             style={{
               position: "absolute",
@@ -185,8 +185,7 @@ function App() {
             {proceeds.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')}
           </div>
           
-           </div>
-          
+           </div>          
                     <div
             style={{
               position: "absolute",
