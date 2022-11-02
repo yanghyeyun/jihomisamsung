@@ -7,7 +7,7 @@ import html2canvas from "html2canvas";
 
 function App() {
   const [coin, setCoin] = useState("누사이퍼");
-  const [coinname, setcoinname] = useState("NU"); //eslint-disable-line no-unused-vars
+  const [coinname, setcoinname] = useState("NU");
   const [askPrice, setaskPrice] = useState("500"); 
   const [bidPrice, setbidPrice] = useState("550");
   const [maxPrice, setmaxPrice] = useState("100000");
