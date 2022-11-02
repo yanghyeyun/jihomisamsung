@@ -19,10 +19,6 @@ function App() {
   const [result, setResult] = useState(
     ((bidPrice / askPrice - 1) * 75 * 100).toFixed(2)
   );
-  const [entry, setentry] = useState(allPrice - allPrice*0.0005);  
-    
-  const [valuePrice, setvaluePrice] = useState(((entry*bidPrice) - ((entry*bidPrice)*0.0005)+1)); 
-    
   const [tangu, setTangu] = useState(false);
 
   useEffect(() => {
@@ -175,7 +171,7 @@ function App() {
 
             }}
           >
-            {entry.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')} 
+            {(maxPrice/askPrice - (maxPrice/askPrice*0.0005)).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')} 
            </div>          
                     <div
             style={{
@@ -189,7 +185,7 @@ function App() {
 
             }}
           >
-            {valuePrice.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')}
+            {((maxPrice/askPrice - (maxPrice/askPrice*0.0005))*bidPrice) - ((maxPrice/askPrice - (maxPrice/askPrice*0.0005))*bidPrice)*0.0005)+1).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')}
           </div>
          
                 <div
