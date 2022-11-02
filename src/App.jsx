@@ -259,7 +259,7 @@ function App() {
 
             }}
           >
-            {entryprice}
+            {entryPrice}
           </div>
            <div
             style={{
