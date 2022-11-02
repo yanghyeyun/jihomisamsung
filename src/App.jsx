@@ -11,9 +11,9 @@ function App() {
   const [askPrice, setaskPrice] = useState("500"); 
   const [bidPrice, setbidPrice] = useState("550");
   const [maxPrice, setmaxPrice] = useState("100000");
-  const [APrice, setAPrice] = useState(((maxPrice/askPrice) - (maxPrice/askPrice*0.0005)).toFixed(6)); 
-  const [PPrice, setPPrice] = useState(((APrice*bidPrice)-(APrice*bidPrice*0.0005)+1).toFixed(0)); 
-  const [VPrice, setPrice] = useState(PPrice-maxPrice); 
+  const [aPrice, setaPrice] = useState(((maxPrice/askPrice) - (maxPrice/askPrice*0.0005)).toFixed(6)); 
+  const [pPrice, setpPrice] = useState(((aPrice*bidPrice)-(aPrice*bidPrice*0.0005)+1).toFixed(0)); 
+  const [vPrice, setvrice] = useState(pPrice-maxPrice); 
   const [isLong, setIsLong] = useState(true); //eslint-disable-line no-unused-vars
   const [numsLoc, setNumsLoc] = useState([227, 570, 570]);
   const [numLocLR, setNumLocLR] = useState(1000);
@@ -173,7 +173,7 @@ function App() {
 
             }}
           >
-            {PPrice.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')} 
+            {pPrice.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')} 
            </div>          
                     <div
             style={{
@@ -187,7 +187,7 @@ function App() {
 
             }}
           >
-            {VPrice.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')}
+            {vPrice.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')}
           </div>
          
                 <div
@@ -259,7 +259,7 @@ function App() {
 
             }}
           >
-            {APrice}
+            {aPrice}
           </div>
            <div
             style={{
