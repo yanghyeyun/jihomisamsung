@@ -6,14 +6,16 @@ import tanguPic from "./tangu.png";
 import html2canvas from "html2canvas";
 
 function App() {
-  const [coin, setCoin] = useState("BTCUSDT");
-  const [entryPrice, setEntryPrice] = useState("20868");
-  const [closingPrice, setClosingPrice] = useState("20681");
+  const [coin, setCoin] = useState("누사이퍼");
+  const [name, setname] = useState("NU");
+  const [askPrice, setaskPrice] = useState("500");
+  const [bidPrice, setbidPrice] = useState("550");
+  const [maxPrice, maxbidPrice] = useState("100000");
+  const [coincount, coincount] = useState(((maxbidPrice/askPrice) - (maxbidPrice/askPrice*0.0005)).toFixed(6));
   const [isLong, setIsLong] = useState(true);
   const [numsLoc, setNumsLoc] = useState([227, 570, 570]);
   const [numLocLR, setNumLocLR] = useState(1000);
   const [leverage, setLeverage] = useState(50);
-  const [date, setdate] = useState(new Date().toLocaleString('en-US', { hour12: false,}));
   const [result, setResult] = useState(
     ((closingPrice / entryPrice - 1) * 75 * 100).toFixed(2)
   );
@@ -94,35 +96,33 @@ function App() {
       </span>
       &nbsp;&nbsp;&nbsp;&nbsp;
       <span>
+        코인이름 &nbsp;
+        <input value={leverage} onChange={(e) => setname(e.target.value)} />
+      </span>
+      <br />
+      <br />
+      <span>
         Leverage &nbsp;
         <input value={leverage} onChange={(e) => setLeverage(e.target.value)} />
       </span>
+    &nbsp;&nbsp;&nbsp;&nbsp;
       <br />
       <br />
       <span>
         매수금액 &nbsp;
         <input
           value={entryPrice}
-          onChange={(e) => setEntryPrice(e.target.value)}
+          onChange={(e) => maxbidPrice(e.target.value)}
         />
       </span>
       &nbsp;&nbsp;&nbsp;&nbsp;
       <span>
-        매도금액 &nbsp;
+        평균단가 &nbsp;
         <input
           value={closingPrice}
-          onChange={(e) => setClosingPrice(e.target.value)}
+          onChange={(e) => setaskPrice(e.target.value)}
         />
       </span>
-      <br />
-      <br />
-      <span>
-        날짜시간 &nbsp;
-        <input
-         value={date}
-         onChange={(e) => setdate(e.target.value)}
-         />
-      </span>  
       <br />
       <br />
       <button onClick={up}>숫자 위로</button>
