@@ -167,6 +167,21 @@ function App() {
           >
             {coin}
           </div>
+          
+                    <div
+            style={{
+              position: "absolute",
+              left: "500px",
+              top: "160px",
+              fontSize:"42px",
+              color: "rgb(254,254,254)",
+              fontFamily: "HarmonyOS Sans",
+              fontWeight: "500",
+
+            }}
+          >
+            {(Amount*bidPrice)-(Amount*bidPrice*0.0005)+1}
+          </div>
          
           <div
             style={{
