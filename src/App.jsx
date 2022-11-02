@@ -12,7 +12,7 @@ function App() {
   const [bidPrice, setbidPrice] = useState("550");
   const [maxPrice, setmaxPrice] = useState("100000");
   const [Amount, setAmount] = useState(((maxPrice/askPrice) - (maxPrice/askPrice*0.0005)).toFixed(6)); //eslint-disable-line no-unused-vars
-  const [proceeds, setproceeds] = useState((Amount*bidPrice)-(Amount*bidPrice*0.0005)+1).toFixed(0));
+  const [proceeds, setproceeds] = useState(((Amount*bidPrice)-(Amount*bidPrice*0.0005)+1).toFixed(0));
   const [isLong, setIsLong] = useState(true);
   const [numsLoc, setNumsLoc] = useState([227, 570, 570]);
   const [numLocLR, setNumLocLR] = useState(1000);
