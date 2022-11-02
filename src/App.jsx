@@ -190,6 +190,21 @@ function App() {
             {Valuation.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')}
           </div>
          
+                <div
+            style={{
+              position: "absolute",
+              left: "500px",
+              top: "150px",
+              fontSize: "28px",
+              color: "RGB(126,126,126)",
+              fontFamily: "HarmonyOS Sans",
+              fontWeight: "500",
+
+            }}
+          >
+            ({coinname})
+          </div>
+          
           <div
             style={{
               position: "absolute",
