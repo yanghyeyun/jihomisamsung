@@ -99,12 +99,6 @@ function App() {
         코인이름 &nbsp;
         <input value={coinname} onChange={(e) => coinname(e.target.value)} />
       </span>
-      <br />
-      <br />
-      <span>
-        Leverage &nbsp;
-        <input value={leverage} onChange={(e) => setLeverage(e.target.value)} />
-      </span>
     &nbsp;&nbsp;&nbsp;&nbsp;
       <br />
       <br />
