@@ -149,12 +149,12 @@ function App() {
           <div
             style={{
               position: "absolute",
-              left: "20px",
+              left: "25px",
               top: "130px",
               fontSize:"32px",
               color: "rgb(23,53,130)",
               fontFamily: "HarmonyOS Sans",
-              fontWeight: "750",
+              fontWeight: "700",
 
             }}
           >
