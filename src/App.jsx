@@ -97,7 +97,7 @@ function App() {
       &nbsp;&nbsp;&nbsp;&nbsp;
       <span>
         코인이름 &nbsp;
-        <input value={leverage} onChange={(e) => coinname(e.target.value)} />
+        <input value={coinname} onChange={(e) => coinname(e.target.value)} />
       </span>
       <br />
       <br />
