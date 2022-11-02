@@ -152,7 +152,7 @@ function App() {
               left: "85px",
               top: "160px",
               fontSize:"42px",
-              color: "rgb(254,254,254)",
+              color: "rgb(0,0,0)",
               fontFamily: "HarmonyOS Sans",
               fontWeight: "500",
 
@@ -167,7 +167,7 @@ function App() {
               left: "500px",
               top: "160px",
               fontSize:"42px",
-              color: "rgb(254,254,254)",
+              color: "rgb(0,0,0)",
               fontFamily: "HarmonyOS Sans",
               fontWeight: "500",
 
@@ -181,7 +181,7 @@ function App() {
               left: "500px",
               top: "250px",
               fontSize:"42px",
-              color: "rgb(254,254,254)",
+              color: "rgb(0,0,0)",
               fontFamily: "HarmonyOS Sans",
               fontWeight: "500",
 
@@ -224,7 +224,7 @@ function App() {
               left: numLocLR - 730 + "px",
               top: numsLoc[2] + "px",
               fontSize: "30px",
-              color: "white",
+              color: "black",
               fontFamily: "HarmonyOS Sans",
               fontWeight: "500",
 
@@ -238,7 +238,7 @@ function App() {
               left: "235px",
               top: "730px",
               fontSize: "28px",
-              color: "white",
+              color: "black",
               fontFamily: "HarmonyOS Sans",
               fontWeight: "500",
 
