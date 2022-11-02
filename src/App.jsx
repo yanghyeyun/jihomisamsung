@@ -228,7 +228,7 @@ function App() {
 
             }}
           >
-            {date}
+            {coincount}
           </div>
            <div
             style={{
