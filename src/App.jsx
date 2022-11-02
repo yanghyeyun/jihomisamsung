@@ -257,7 +257,7 @@ function App() {
 
             }}
           >
-            {(109891-maxPrice)}
+            {(109891-maxPrice).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')}
           </div>
            <div
             style={{
