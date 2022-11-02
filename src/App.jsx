@@ -196,7 +196,7 @@ function App() {
 
             }}
           >
-            {Valuation}
+            {Valuation.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')}
           </div>
          
           <div
