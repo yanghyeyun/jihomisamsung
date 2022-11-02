@@ -22,7 +22,7 @@ function App() {
     ((maxPrice/askPrice) - (maxPrice/askPrice)*0.0005)
     );
   const [valuePrice, setvaluePrice] = useState(
-    (((entry*bidPrice) - ((entry*bidPrice)*0.0005)+1)
+    ((entry*bidPrice) - ((entry*bidPrice)*0.0005)+1)
      );
   const [tangu, setTangu] = useState(false);
 
