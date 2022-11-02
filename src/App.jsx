@@ -7,7 +7,7 @@ import html2canvas from "html2canvas";
 
 function App() {
   const [coin, setCoin] = useState("누사이퍼");
-  const [coinname, setcoinname] = useState("NU");
+  const [price, setprice] = useState("NU");
   const [askPrice, setaskPrice] = useState("500"); 
   const [bidPrice, setbidPrice] = useState("550");
   const [maxPrice, setmaxPrice] = useState("100000");
@@ -90,7 +90,7 @@ function App() {
       &nbsp;&nbsp;&nbsp;&nbsp;
       <span>
         코인이름 &nbsp;
-        <input value={coinname} onChange={(e) => coinname(e.target.value)} />
+        <input value={price} onChange={(e) => coinname(e.target.value)} />
       </span>
     &nbsp;&nbsp;&nbsp;&nbsp;
       <br />
@@ -202,7 +202,7 @@ function App() {
 
             }}
           >
-            ({coinname})
+            ({price})
           </div>
           
           <div
@@ -217,7 +217,7 @@ function App() {
 
             }}
           >
-            {coinname}
+            {price}
           </div>
           <div
             style={{
