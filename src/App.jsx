@@ -7,11 +7,11 @@ import html2canvas from "html2canvas";
 
 function App() {
   const [coin, setCoin] = useState("누사이퍼");
-  const [coinname, setcoinname] = useState("NU");
-  const [askPrice, setaskPrice] = useState("500");
+  const [coinname, setcoinname] = useState("NU"); //eslint-disable-line no-unused-vars
+  const [askPrice, setaskPrice] = useState("500"); 
   const [bidPrice, setbidPrice] = useState("550");
   const [maxPrice, setmaxPrice] = useState("100000");
-  const [Amount, setAmount] = useState(((maxPrice/askPrice) - (maxPrice/askPrice*0.0005)).toFixed(6));
+  const [Amount, setAmount] = useState(((maxPrice/askPrice) - (maxPrice/askPrice*0.0005)).toFixed(6)); //eslint-disable-line no-unused-vars
   const [isLong, setIsLong] = useState(true);
   const [numsLoc, setNumsLoc] = useState([227, 570, 570]);
   const [numLocLR, setNumLocLR] = useState(1000);
