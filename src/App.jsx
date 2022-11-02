@@ -185,7 +185,7 @@ function App() {
 
             }}
           >
-            {{(maxPrice/askPrice - (maxPrice/askPrice*0.0005))*bidPrice) - ((maxPrice/askPrice - (maxPrice/askPrice*0.0005))*bidPrice)*0.0005+1}.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')}
+            {({maxPrice/askPrice - (maxPrice/askPrice*0.0005))*bidPrice) - ((maxPrice/askPrice - (maxPrice/askPrice*0.0005))*bidPrice)*0.0005}+1).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')}
           </div>
          
                 <div
