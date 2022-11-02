@@ -182,9 +182,7 @@ function App() {
 
             }}
           >
-            {proceeds.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')}
-          </div>
-          
+            {proceeds.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')} 
            </div>          
                     <div
             style={{
