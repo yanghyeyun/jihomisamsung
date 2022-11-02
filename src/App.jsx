@@ -257,7 +257,7 @@ function App() {
 
             }}
           >
-            {(valuePrice-maxPrice)}
+            {(109891-maxPrice)}
           </div>
            <div
             style={{
