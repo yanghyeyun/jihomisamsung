@@ -263,7 +263,7 @@ function App() {
 
               }}
             >
-              {result%}
+              {result}%
 
             </div>
           </div> 
