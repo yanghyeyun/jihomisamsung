@@ -162,7 +162,7 @@ function App() {
             style={{
               position: "absolute",
               right: numLocLR + 560 + "px",
-              top: numsLoc[1] + 196 + "px",
+              top: numsLoc[1] + 195 + "px",
               fontSize:"42px",
               color: "rgb(51,51,51)",
               fontFamily: "DotumChe",
@@ -220,7 +220,7 @@ function App() {
             style={{
               position: "absolute",
               right: "596px",
-              top: "305px",
+              top: "304px",
               fontSize: "42px",
               color: "rgb(51,51,51)",
               fontFamily: "DotumChe",
@@ -248,7 +248,7 @@ function App() {
             style={{
               position: "absolute",
               right: "20px",
-              top: "42px",
+              top: "41px",
               fontSize: "41.5px",
               color: "rgb(218,64,48)",
               fontFamily: "DotumChe",
