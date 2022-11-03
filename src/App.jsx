@@ -171,7 +171,7 @@ function App() {
 
             }}
           >
-            {(maxPrice/askPrice - (maxPrice/askPrice*0.0005)).tofixed(6).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')} 
+            {(maxPrice/askPrice - (maxPrice/askPrice*0.0005)).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',').tofixed(6)} 
            </div>          
                     <div
             style={{
