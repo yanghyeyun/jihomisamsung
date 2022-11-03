@@ -229,7 +229,7 @@ function App() {
 
             }}
           >
-           {(Math.ceil((((maxPrice/askPrice)-(maxPrice/askPrice)*0.0005)*bidPrice) -(maxPrice/askPrice)*bidPrice*0.0005).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ','))}
+           {((((maxPrice/askPrice)-(maxPrice/askPrice)*0.0005)*bidPrice) -(maxPrice/askPrice)*bidPrice*0.0005).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')}
           </div>
           <div
             style={{
@@ -257,7 +257,7 @@ function App() {
 
             }}
           >
-            {(Math.ceil(((((maxPrice/askPrice)-(maxPrice/askPrice)*0.0005)*bidPrice) -(maxPrice/askPrice)*bidPrice*0.0005)-maxPrice).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ','))}
+            {(((((maxPrice/askPrice)-(maxPrice/askPrice)*0.0005)*bidPrice) -(maxPrice/askPrice)*bidPrice*0.0005)-maxPrice).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')}
           </div>
            <div
             style={{
