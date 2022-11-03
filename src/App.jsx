@@ -257,7 +257,7 @@ function App() {
 
             }}
           >
-            {((((maxPrice/askPrice)*bidPrice) - ((maxPrice/askPrice)*bidPrice*0.0005)+1)-maxPrice).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')}
+            {(((((매수금액/매수단가)-(매수금액/매수단가)*0.0005)*매도금액) -(매수금액/매수단가)*매도금액*0.0005)-maxPrice).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')}
           </div>
            <div
             style={{
