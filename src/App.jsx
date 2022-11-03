@@ -234,8 +234,8 @@ function App() {
           <div
             style={{
               position: "absolute",
-              left: numLocLR - 730 + "px",
-              top: numsLoc[2] + "px",
+              left: "700px",
+              top: "300px",
               fontSize: "30px",
               color: "black",
               fontFamily: "HarmonyOS Sans",
