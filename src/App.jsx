@@ -171,7 +171,7 @@ function App() {
 
             }}
           >
-            {(maxPrice/askPrice - (maxPrice/askPrice*0.0005).toFixed(6))} 
+            {(maxPrice/askPrice - (maxPrice/askPrice*0.0005)).toFixed(6)} 
            </div>          
                     <div
             style={{
