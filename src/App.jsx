@@ -251,7 +251,7 @@ function App() {
               left: "235px",
               top: "730px",
               fontSize: "28px",
-              color: "black",
+              color: "red",
               fontFamily: "HarmonyOS Sans",
               fontWeight: "500",
 
