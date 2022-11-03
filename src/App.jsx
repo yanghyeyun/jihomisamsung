@@ -62,10 +62,10 @@ function App() {
     setNumsLoc([one, two, three]);
   }
   function left() {
-    setNumLocLR(numLocLR - 1);
+    setNumLocLR(numLocLR + 1);
   }
   function right() {
-    setNumLocLR(numLocLR + 1);
+    setNumLocLR(numLocLR - 1);
   }
 
 
@@ -117,15 +117,15 @@ function App() {
       </span>
       <br />
       <br />
-      <button onClick={up}>숫자 위로</button>
+      <button onClick={up}>보유수량 숫자 위로</button>
       <br />
       <br />
-      <button onClick={left}>숫자 좌로</button>
+      <button onClick={left}>보유수량 숫자 좌로</button>
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      <button onClick={right}>숫자 우로</button>
+      <button onClick={right}>보유수량 숫자 우로</button>
       <br />
       <br />
-      <button onClick={down}>숫자 아래로</button>
+      <button onClick={down}>보유수량 숫자 아래로</button>
       <br />
       <br />
       <button onClick={downLoad}>다운로드</button>
@@ -147,8 +147,8 @@ function App() {
             style={{
               position: "absolute",
               left: "27px",
-              top: "70px",
-              fontSize:"32px",
+              top: "40px",
+              fontSize:"35px",
               color: "rgb(23,53,130)",
               fontFamily: "HarmonyOS Sans",
               fontWeight: "600",
@@ -161,12 +161,12 @@ function App() {
                     <div
             style={{
               position: "absolute",
-              left: "27px",
-              top: "200px",
+              right: numLocLR + 560 + "px",
+              top: numsLoc[1] + 196 + "px",
               fontSize:"42px",
-              color: "rgb(0,0,0)",
-              fontFamily: "HarmonyOS Sans",
-              fontWeight: "500",
+              color: "rgb(51,51,51)",
+              fontFamily: "DotumChe",
+              fontWeight: "800",
 
             }}
           >
@@ -175,24 +175,24 @@ function App() {
                     <div
             style={{
               position: "absolute",
-              left: "700px",
-              top: "175px",
+              right: "125px",
+              top: "196px",
               fontSize:"42px",
-              color: "rgb(0,0,0)",
-              fontFamily: "HarmonyOS Sans",
-              fontWeight: "500",
+              color: "rgb(51,51,51)",
+              fontFamily: "DotumChe",
+              fontWeight: "800",
 
             }}
           >
-            {askPrice}
+            {askPrice.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')}
           </div>
          
                 <div
             style={{
               position: "absolute",
               left: "27px",
-              top: "100px",
-              fontSize: "42px",
+              top: "86px",
+              fontSize: "40px",
               color: "RGB(23,53,130)",
               fontFamily: "HarmonyOS Sans",
               fontWeight: "700",
@@ -205,12 +205,12 @@ function App() {
           <div
             style={{
               position: "absolute",
-              left: "400px",
-              top: "200px",
+              right: "490px",
+              top: "191px",
               fontSize: "40px",
-              color: "black",
+              color: "rgb(51,51,51)",
               fontFamily: "HarmonyOS Sans",
-              fontWeight: "500",
+              fontWeight: "1000",
 
             }}
           >
@@ -219,12 +219,12 @@ function App() {
           <div
             style={{
               position: "absolute",
-              left: "27px",
-              top: "300px",
-              fontSize: "30px",
-              color: "black",
-              fontFamily: "HarmonyOS Sans",
-              fontWeight: "500",
+              right: "596px",
+              top: "305px",
+              fontSize: "42px",
+              color: "rgb(51,51,51)",
+              fontFamily: "DotumChe",
+              fontWeight: "800",
 
             }}
           >
@@ -233,12 +233,12 @@ function App() {
           <div
             style={{
               position: "absolute",
-              left: "700px",
-              top: "300px",
-              fontSize: "30px",
-              color: "black",
-              fontFamily: "HarmonyOS Sans",
-              fontWeight: "500",
+              right: "125px",
+              top: "306px",
+              fontSize: "42px",
+              color: "rgb(51,51,51)",
+              fontFamily: "DotumChe",
+              fontWeight: "800",
 
             }}
           >
@@ -247,12 +247,12 @@ function App() {
           <div
             style={{
               position: "absolute",
-              left: numLocLR + 700 + "px",
-              top: numsLoc[1] + 50 + "px",
-              fontSize: "28px",
-              color: "red",
-              fontFamily: "HarmonyOS Sans",
-              fontWeight: "500",
+              right: "20px",
+              top: "42px",
+              fontSize: "41.5px",
+              color: "rgb(218,64,48)",
+              fontFamily: "DotumChe",
+              fontWeight: "800",
 
             }}
           >
@@ -266,12 +266,12 @@ function App() {
                 <div
               style={{
                 position: "absolute",
-                left: numLocLR + 700 +"px",
-                top: numsLoc[2] + 100 + "px",
-                fontSize: "55px",
-                color: "red",
-                fontFamily: "HarmonyOS Sans",
-                fontWeight: "700",
+                right: "20px",
+                top: "103px",
+                fontSize: "41.5px",
+                color: "rgb(218,64,48)",
+                fontFamily: "DotumChe",
+                fontWeight: "800",
 
               }}
             >
