@@ -267,7 +267,7 @@ function App() {
                 <div
               style={{
                 position: "absolute",
-                left: "700px",
+                left: numLocLR + 700 +"px",
                 top: numsLoc[2] + 100 + "px",
                 fontSize: "55px",
                 color: "red",
