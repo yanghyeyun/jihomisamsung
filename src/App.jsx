@@ -8,6 +8,7 @@ import html2canvas from "html2canvas";
 function App() {
   const [coin, setCoin] = useState("누사이퍼");
   const [price, setprice] = useState("NU");
+  const [won, setwon] = useState("KRW");
   const [askPrice, setaskPrice] = useState("500"); 
   const [bidPrice, setbidPrice] = useState("550");
   const [maxPrice, setmaxPrice] = useState("100000");
@@ -147,8 +148,8 @@ function App() {
             style={{
               position: "absolute",
               left: "27px",
-              top: "40px",
-              fontSize:"35px",
+              top: "29px",
+              fontSize:"32.5px",
               color: "rgb(23,53,130)",
               fontFamily: "HarmonyOS Sans",
               fontWeight: "600",
@@ -161,12 +162,12 @@ function App() {
                     <div
             style={{
               position: "absolute",
-              right: numLocLR + 560 + "px",
-              top: numsLoc[1] + 195 + "px",
-              fontSize:"42px",
+              right: numLocLR + 556 + "px",
+              top: numsLoc[1] + 174 + "px",
+              fontSize: "35.5px",
               color: "rgb(51,51,51)",
-              fontFamily: "DotumChe",
-              fontWeight: "800",
+              fontFamily: "Roboto_Regular",
+              fontWeight: "500",
 
             }}
           >
@@ -175,12 +176,12 @@ function App() {
                     <div
             style={{
               position: "absolute",
-              right: "125px",
-              top: "196px",
-              fontSize:"42px",
+              right: "120px",
+              top: "174px",
+              fontSize: "35.5px",
               color: "rgb(51,51,51)",
-              fontFamily: "DotumChe",
-              fontWeight: "800",
+              fontFamily: "Roboto_Regular",
+              fontWeight: "500",
 
             }}
           >
@@ -191,8 +192,8 @@ function App() {
             style={{
               position: "absolute",
               left: "27px",
-              top: "86px",
-              fontSize: "40px",
+              top: "72px",
+              fontSize: "33.5px",
               color: "RGB(23,53,130)",
               fontFamily: "HarmonyOS Sans",
               fontWeight: "700",
@@ -205,9 +206,9 @@ function App() {
           <div
             style={{
               position: "absolute",
-              right: "490px",
-              top: "191px",
-              fontSize: "40px",
+              right: "494px",
+              top: "176px",
+              fontSize: "35px",
               color: "rgb(51,51,51)",
               fontFamily: "HarmonyOS Sans",
               fontWeight: "1000",
@@ -219,12 +220,54 @@ function App() {
           <div
             style={{
               position: "absolute",
-              right: "596px",
-              top: "304px",
-              fontSize: "42px",
+              right: "16px",
+              top: "176px",
+              fontSize: "35px",
               color: "rgb(51,51,51)",
-              fontFamily: "DotumChe",
-              fontWeight: "800",
+              fontFamily: "HarmonyOS Sans",
+              fontWeight: "1000",
+
+            }}
+          >
+            {won}
+          </div>
+          <div
+            style={{
+              position: "absolute",
+              right: "496px",
+              top: "295px",
+              fontSize: "35px",
+              color: "rgb(51,51,51)",
+              fontFamily: "HarmonyOS Sans",
+              fontWeight: "1000",
+
+            }}
+          >
+            {won}
+          </div>
+                   <div
+            style={{
+              position: "absolute",
+              right: "16px",
+              top: "295px",
+              fontSize: "35px",
+              color: "rgb(51,51,51)",
+              fontFamily: "HarmonyOS Sans",
+              fontWeight: "1000",
+
+            }}
+          >
+            {won}
+          </div>
+          <div
+            style={{
+              position: "absolute",
+              right: "603px",
+              top: "293px",
+              fontSize: "35.5px",
+              color: "rgb(51,51,51)",
+              fontFamily: "Roboto_Regular",
+              fontWeight: "500",
 
             }}
           >
@@ -233,12 +276,12 @@ function App() {
           <div
             style={{
               position: "absolute",
-              right: "125px",
-              top: "306px",
-              fontSize: "42px",
+              right: "120px",
+              top: "293px",
+              fontSize: "35.5px",
               color: "rgb(51,51,51)",
-              fontFamily: "DotumChe",
-              fontWeight: "800",
+              fontFamily: "Roboto_Regular",
+              fontWeight: "500",
 
             }}
           >
@@ -247,12 +290,12 @@ function App() {
           <div
             style={{
               position: "absolute",
-              right: "20px",
-              top: "41px",
-              fontSize: "41.5px",
+              right: "16px",
+              top: "16px",
+              fontSize: "35.5px",
               color: "rgb(218,64,48)",
-              fontFamily: "DotumChe",
-              fontWeight: "800",
+              fontFamily: "Roboto_Regular",
+              fontWeight: "500",
 
             }}
           >
@@ -266,12 +309,12 @@ function App() {
                 <div
               style={{
                 position: "absolute",
-                right: "20px",
-                top: "103px",
-                fontSize: "41.5px",
+                right: "16px",
+                top: "69px",
+                fontSize: "35.5px",
                 color: "rgb(218,64,48)",
-                fontFamily: "DotumChe",
-                fontWeight: "800",
+                fontFamily: "Roboto_Regular",
+                fontWeight: "500",
 
               }}
             >
