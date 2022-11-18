@@ -7,7 +7,7 @@ import html2canvas from "html2canvas";
 
 function App() {
   const [coin, setCoin] = useState("헤데라");
-  const [price, setprice] = useState("HBA");
+  const [price, setprice] = useState("HBAR");
   const [won, setwon] = useState("KRW");
   const [askPrice, setaskPrice] = useState("66"); 
   const [bidPrice, setbidPrice] = useState("68");
