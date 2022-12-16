@@ -6,11 +6,11 @@ import tanguPic from "./tangu.png";
 import html2canvas from "html2canvas";
 
 function App() {
-  const [coin, setCoin] = useState("스토리지");
-  const [price, setprice] = useState("STORJ");
+  const [coin, setCoin] = useState("셀로");
+  const [price, setprice] = useState("CELO");
   const [won, setwon] = useState("KRW");
-  const [askPrice, setaskPrice] = useState("424.6"); 
-  const [bidPrice, setbidPrice] = useState("469");
+  const [askPrice, setaskPrice] = useState("719"); 
+  const [bidPrice, setbidPrice] = useState("798");
   const [maxPrice, setmaxPrice] = useState("100000");
   const [isLong, setIsLong] = useState(true); //eslint-disable-line no-unused-vars
   const [numsLoc, setNumsLoc] = useState([0, 0, 0]);
