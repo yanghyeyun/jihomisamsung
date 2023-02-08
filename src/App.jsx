@@ -122,8 +122,8 @@ function App() {
             style={{
               position: "absolute",
               right: "320px",
-              top: "180px",
-              fontSize: "35.5px",
+              top: "198px",
+              fontSize: "37px",
               color: "rgb(241,10,68)",
               fontFamily: "NanumBarunGothic",
               fontWeight: "500",
