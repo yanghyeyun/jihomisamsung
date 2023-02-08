@@ -111,7 +111,7 @@ function App() {
               top: "180px",
               fontSize:"32.5px",
               color: "black",
-              fontFamily: "HarmonyOS Sans",
+              fontFamily: "Pretendard",
               fontWeight: "600",
 
             }}
@@ -125,7 +125,7 @@ function App() {
               top: "180px",
               fontSize: "35.5px",
               color: "rgb(218,64,48)",
-              fontFamily: "Roboto_Regular",
+              fontFamily: "NanumBarunGothic",
               fontWeight: "500",
 
             }}
