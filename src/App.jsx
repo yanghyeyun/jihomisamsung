@@ -11,8 +11,6 @@ function App() {
   const [bidPrice, setbidPrice] = useState("186");
   const [maxPrice, setmaxPrice] = useState("100000");
   const [isLong, setIsLong] = useState(true); //eslint-disable-line no-unused-vars
-  const [numsLoc, setNumsLoc] = useState([0, 0, 0]);
-  const [numLocLR, setNumLocLR] = useState(0);
   const [leverage, setLeverage] = useState(1); //eslint-disable-line no-unused-vars
   const [result, setResult] = useState(
     ((bidPrice / askPrice - 1) * 75 * 100).toFixed(2)
@@ -47,26 +45,6 @@ function App() {
       onSaveAs(canvas.toDataURL("image/png"), name + ".png");
     });
   }
-
-  function down() {
-    const one = numsLoc[0] + 1;
-    const two = numsLoc[1] + 1;
-    const three = numsLoc[2] + 1;
-    setNumsLoc([one, two, three]);
-  }
-  function up() {
-    const one = numsLoc[0] - 1;
-    const two = numsLoc[1] - 1;
-    const three = numsLoc[2] - 1;
-    setNumsLoc([one, two, three]);
-  }
-  function left() {
-    setNumLocLR(numLocLR + 1);
-  }
-  function right() {
-    setNumLocLR(numLocLR - 1);
-  }
-
 
   const onSaveAs = (uri, filename) => {
     var link = document.createElement("a");
@@ -109,17 +87,6 @@ function App() {
           onChange={(e) => setaskPrice(e.target.value)}
         />
       </span>
-      <br />
-      <br />
-      <button onClick={up}>보유수량 숫자 위로</button>
-      <br />
-      <br />
-      <button onClick={left}>보유수량 숫자 좌로</button>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      <button onClick={right}>보유수량 숫자 우로</button>
-      <br />
-      <br />
-      <button onClick={down}>보유수량 숫자 아래로</button>
       <br />
       <br />
       <button onClick={downLoad}>다운로드</button>
