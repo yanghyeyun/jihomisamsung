@@ -123,7 +123,7 @@ function App() {
               position: "absolute",
               right: "320px",
               top: "198px",
-              fontSize: "37px",
+              fontSize: "38px",
               color: "rgb(241,10,68)",
               fontFamily: "NanumBarunGothic",
               fontWeight: "500",
