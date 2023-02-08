@@ -143,7 +143,7 @@ function App() {
                 left: "940px",
                 top: "180px",
                 fontSize: "35.5px",
-                color: "rgb(218,64,48)",
+                color: "rgb(241,10,68)",
                 fontFamily: "Roboto_Regular",
                 fontWeight: "500",
 
