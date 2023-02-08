@@ -65,7 +65,7 @@ function App() {
       <br />
       <br />
       <span>
-        총 &nbsp;
+        총자산 &nbsp;
         <input
           value={maxPrice}
           onChange={(e) => setmaxPrice(e.target.value)}
