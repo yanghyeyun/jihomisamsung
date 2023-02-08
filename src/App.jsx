@@ -180,22 +180,6 @@ function App() {
           >
             {askPrice.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')}
           </div>
-         
-                <div
-            style={{
-              position: "absolute",
-              left: "27px",
-              top: "72px",
-              fontSize: "33.5px",
-              color: "RGB(23,53,130)",
-              fontFamily: "HarmonyOS Sans",
-              fontWeight: "700",
-
-            }}
-          >
-            ({price})
-          </div>
-          
           <div
             style={{
               position: "absolute",
