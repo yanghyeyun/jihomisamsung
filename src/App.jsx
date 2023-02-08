@@ -121,7 +121,7 @@ function App() {
           <div
             style={{
               position: "absolute",
-              left: "500px",
+              left: "600px",
               top: "180px",
               fontSize: "35.5px",
               color: "rgb(218,64,48)",
@@ -140,8 +140,8 @@ function App() {
                 <div
               style={{
                 position: "absolute",
-                right: "16px",
-                top: "69px",
+                left: "1000px",
+                top: "180px",
                 fontSize: "35.5px",
                 color: "rgb(218,64,48)",
                 fontFamily: "Roboto_Regular",
