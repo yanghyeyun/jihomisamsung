@@ -97,8 +97,8 @@ function App() {
         style={{
           backgroundImage: `url(${tangu ? tanguPic : (isLong ? bgLong : bgShort)})`,
           backgroundSize: "cover",
-          height: "419px",
-          width: "916px",
+          height: "292px",
+          width: "1080px",
           margin: "0 auto",
           position: "relative",
         }}
