@@ -124,7 +124,7 @@ function App() {
               left: "660px",
               top: "180px",
               fontSize: "35.5px",
-              color: "rgb(218,64,48)",
+              color: "rgb(51,51,51)",
               fontFamily: "NanumBarunGothic",
               fontWeight: "500",
 
