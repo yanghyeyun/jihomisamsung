@@ -121,9 +121,9 @@ function App() {
           <div
             style={{
               position: "absolute",
-              right: "318px",
-              top: "196px",
-              fontSize: "39px",
+              right: "316px",
+              top: "194px",
+              fontSize: "40px",
               color: "rgb(241,10,68)",
               fontFamily: "NanumBarunGothic",
               fontWeight: "500",
