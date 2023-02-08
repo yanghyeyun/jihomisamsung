@@ -7,7 +7,6 @@ import html2canvas from "html2canvas";
 
 function App() {
   const [coin, setCoin] = useState("엘프");
-  const [price, setprice] = useState("ELF");
   const [askPrice, setaskPrice] = useState("174"); 
   const [bidPrice, setbidPrice] = useState("186");
   const [maxPrice, setmaxPrice] = useState("100000");
@@ -85,11 +84,6 @@ function App() {
         <input value={coin} onChange={(e) => setCoin(e.target.value)} />
       </span>
       &nbsp;&nbsp;&nbsp;&nbsp;
-      <span>
-        코인이름 &nbsp;
-        <input value={price} onChange={(e) =>setprice(e.target.value)} />
-      </span>
-    &nbsp;&nbsp;&nbsp;&nbsp;
       <br />
       <br />
       <span>
