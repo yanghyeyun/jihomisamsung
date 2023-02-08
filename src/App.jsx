@@ -65,7 +65,7 @@ function App() {
       <br />
       <br />
       <span>
-        매수금액 &nbsp;
+        총 &nbsp;
         <input
           value={maxPrice}
           onChange={(e) => setmaxPrice(e.target.value)}
@@ -81,7 +81,7 @@ function App() {
       </span>
       &nbsp;&nbsp;&nbsp;&nbsp;
       <span>
-        평균단가 &nbsp;
+        매수금액 &nbsp;
         <input
           value={askPrice}
           onChange={(e) => setaskPrice(e.target.value)}
