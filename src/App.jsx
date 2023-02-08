@@ -121,7 +121,7 @@ function App() {
           <div
             style={{
               position: "absolute",
-              left: "700px",
+              left: "650px",
               top: "180px",
               fontSize: "35.5px",
               color: "rgb(218,64,48)",
@@ -140,7 +140,7 @@ function App() {
                 <div
               style={{
                 position: "absolute",
-                left: "900px",
+                left: "950px",
                 top: "180px",
                 fontSize: "35.5px",
                 color: "rgb(218,64,48)",
