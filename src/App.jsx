@@ -151,63 +151,6 @@ function App() {
           >
             {coin}
           </div>
-
-                    <div
-            style={{
-              position: "absolute",
-              right: numLocLR + 556 + "px",
-              top: numsLoc[1] + 174 + "px",
-              fontSize: "35.5px",
-              color: "rgb(51,51,51)",
-              fontFamily: "Roboto_Regular",
-              fontWeight: "500",
-
-            }}
-          >
-            {(Number(maxPrice/askPrice - (maxPrice/askPrice*0.0005)).toFixed(6)).toString().replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ',')} 
-           </div>          
-                    <div
-            style={{
-              position: "absolute",
-              right: "120px",
-              top: "174px",
-              fontSize: "35.5px",
-              color: "rgb(51,51,51)",
-              fontFamily: "Roboto_Regular",
-              fontWeight: "500",
-
-            }}
-          >
-            {askPrice.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')}
-          </div>
-          <div
-            style={{
-              position: "absolute",
-              right: "603px",
-              top: "293px",
-              fontSize: "35.5px",
-              color: "rgb(51,51,51)",
-              fontFamily: "Roboto_Regular",
-              fontWeight: "500",
-
-            }}
-          >
-           {(Number((((maxPrice/askPrice)-(maxPrice/askPrice)*0.0005)*bidPrice) -(maxPrice/askPrice)*bidPrice*0.0005).toFixed(0)).toString().replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ',')}
-          </div>
-          <div
-            style={{
-              position: "absolute",
-              right: "120px",
-              top: "293px",
-              fontSize: "35.5px",
-              color: "rgb(51,51,51)",
-              fontFamily: "Roboto_Regular",
-              fontWeight: "500",
-
-            }}
-          >
-           {maxPrice.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')}
-          </div>
           <div
             style={{
               position: "absolute",
