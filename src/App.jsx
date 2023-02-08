@@ -110,7 +110,7 @@ function App() {
               left: "2px",
               top: "180px",
               fontSize:"32.5px",
-              color: "black",
+              color: "rgb(51,51,51)",
               fontFamily: "Pretendard",
               fontWeight: "600",
 
@@ -124,7 +124,7 @@ function App() {
               left: "660px",
               top: "180px",
               fontSize: "35.5px",
-              color: "rgb(51,51,51)",
+              color: "rgb(241,10,68)",
               fontFamily: "NanumBarunGothic",
               fontWeight: "500",
 
@@ -144,7 +144,7 @@ function App() {
                 top: "180px",
                 fontSize: "35.5px",
                 color: "rgb(241,10,68)",
-                fontFamily: "Roboto_Regular",
+                fontFamily: "NanumBarunGothic",
                 fontWeight: "500",
 
               }}
