@@ -121,7 +121,7 @@ function App() {
           <div
             style={{
               position: "absolute",
-              left: "160px",
+              left: "500px",
               top: "180px",
               fontSize: "35.5px",
               color: "rgb(218,64,48)",
