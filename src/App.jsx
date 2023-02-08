@@ -109,7 +109,7 @@ function App() {
               position: "absolute",
               left: "2px",
               top: "180px",
-              fontSize:"32.5px",
+              fontSize:"34px",
               color: "rgb(51,51,51)",
               fontFamily: "Pretendard",
               fontWeight: "600",
