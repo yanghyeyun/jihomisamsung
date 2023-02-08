@@ -107,8 +107,8 @@ function App() {
           <div
             style={{
               position: "absolute",
-              left: "19px",
-              top: "190px",
+              left: "20px",
+              top: "186px",
               fontSize:"40px",
               color: "rgb(51,51,51)",
               fontFamily: "Pretendard",
