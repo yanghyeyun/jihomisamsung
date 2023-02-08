@@ -108,9 +108,9 @@ function App() {
             style={{
               position: "absolute",
               left: "2px",
-              top: "200px",
+              top: "180px",
               fontSize:"32.5px",
-              color: "rgb(23,53,130)",
+              color: "black",
               fontFamily: "HarmonyOS Sans",
               fontWeight: "600",
 
