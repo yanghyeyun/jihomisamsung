@@ -6,7 +6,7 @@ import tanguPic from "./tangu.png";
 import html2canvas from "html2canvas";
 
 function App() {
-  const [coin, setCoin] = useState("엘프");
+  const [coin, setCoin] = useState("카나리아바이오");
   const [askPrice, setaskPrice] = useState("174"); 
   const [bidPrice, setbidPrice] = useState("186");
   const [maxPrice, setmaxPrice] = useState("100000");
