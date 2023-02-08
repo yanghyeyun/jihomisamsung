@@ -183,20 +183,6 @@ function App() {
           <div
             style={{
               position: "absolute",
-              right: "494px",
-              top: "176px",
-              fontSize: "35px",
-              color: "rgb(51,51,51)",
-              fontFamily: "HarmonyOS Sans",
-              fontWeight: "1000",
-
-            }}
-          >
-            {price}
-          </div>
-          <div
-            style={{
-              position: "absolute",
               right: "603px",
               top: "293px",
               fontSize: "35.5px",
