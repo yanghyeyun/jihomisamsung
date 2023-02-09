@@ -106,6 +106,7 @@ function App() {
          onChange={(e) => setdate(e.target.value)}
          />
       </span> 
+   &nbsp;&nbsp;&nbsp;&nbsp;
       <button onClick={downLoad}>다운로드</button>
       <br />
       <br />
