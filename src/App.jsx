@@ -166,8 +166,8 @@ function App() {
                   <div
             style={{
               position: "absolute",
-              right: "70px",
-              top: "250px",
+              right: "30px",
+              top: "241px",
               fontSize:"40px",
               color: "rgb(0,0,0)",
               fontFamily: "SpoqaHanSans",
