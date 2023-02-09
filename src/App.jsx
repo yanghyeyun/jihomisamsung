@@ -115,7 +115,7 @@ function App() {
         style={{
           backgroundImage: `url(${tangu ? tanguPic : (isLong ? bgLong : bgShort)})`,
           backgroundSize: "cover",
-          height: "292px",
+          height: "331px",
           width: "1080px",
           margin: "0 auto",
           position: "relative",
@@ -125,7 +125,7 @@ function App() {
             style={{
               position: "absolute",
               left: "20px",
-              top: "100px",
+              top: "200px",
               fontSize:"40px",
               color: "rgb(51,51,51)",
               fontFamily: "Pretendard",
@@ -139,7 +139,7 @@ function App() {
             style={{
               position: "absolute",
               left: "20px",
-              top: "186px",
+              top: "250px",
               fontSize:"40px",
               color: "rgb(51,51,51)",
               fontFamily: "Pretendard",
@@ -152,8 +152,8 @@ function App() {
          <div
             style={{
               position: "absolute",
-              left: "70px",
-              top: "100px",
+              right: "70px",
+              top: "200px",
               fontSize:"40px",
               color: "rgb(51,51,51)",
               fontFamily: "Pretendard",
@@ -166,8 +166,8 @@ function App() {
                   <div
             style={{
               position: "absolute",
-              left: "70px",
-              top: "186px",
+              right: "70px",
+              top: "250px",
               fontSize:"40px",
               color: "rgb(51,51,51)",
               fontFamily: "Pretendard",
@@ -199,8 +199,8 @@ function App() {
                 <div
               style={{
                 position: "absolute",
-                right: "26px",
-                top: "194px",
+                right: "318px",
+                top: "250px",
                 fontSize: "40px",
                 color: "rgb(241,10,68)",
                 fontFamily: "NanumBarunGothic",
