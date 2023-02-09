@@ -180,7 +180,7 @@ function App() {
           <div
             style={{
               position: "absolute",
-              right: "318px",
+              right: "360px",
               top: "194px",
               fontSize: "40px",
               color: "rgb(241,9,68)",
