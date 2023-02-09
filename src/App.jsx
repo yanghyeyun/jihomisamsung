@@ -125,6 +125,7 @@ function App() {
             }}
           >
             {coin}
+         </div>
            <div
             style={{
               position: "absolute",
