@@ -21,6 +21,7 @@ function App() {
   const [isLong, setIsLong] = useState(true); //eslint-disable-line no-unused-vars
   const [leverage, setLeverage] = useState(1); //eslint-disable-line no-unused-vars
   const [date, setdate] = useState(today);
+  const zero = num => num < 10 && num >= 0 ? "0" + num : num;
 
   const [result, setResult] = useState(
     ((bidPrice / askPrice - 1) * 75 * 100).toFixed(2)
