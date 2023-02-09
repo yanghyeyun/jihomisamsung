@@ -200,7 +200,7 @@ function App() {
               style={{
                 position: "absolute",
                 right: "360px",
-                top: "240px",
+                top: "241px",
                 fontSize: "40px",
                 color: "rgb(241,9,68)",
                 fontFamily: "SpoqaHanSans",
