@@ -67,7 +67,7 @@ function App() {
       <br />
       <span>
         날짜 &nbsp;
-        <input value={coin} onChange={(e) => setdate(e.target.value)} />
+        <input value={date} onChange={(e) => setdate(e.target.value)} />
       </span>
       &nbsp;&nbsp;&nbsp;&nbsp;
       <br />
