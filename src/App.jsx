@@ -120,7 +120,20 @@ function App() {
           position: "relative",
         }}
       >
+          <div
+            style={{
+              position: "absolute",
+              left: "20px",
+              top: "100px",
+              fontSize:"40px",
+              color: "rgb(51,51,51)",
+              fontFamily: "Pretendard",
+              fontWeight: "600",
 
+            }}
+          >
+            {date}
+         </div>
           <div
             style={{
               position: "absolute",
