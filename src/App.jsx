@@ -11,7 +11,7 @@ var month = today.getUTCMonth() + 1; //months from 1-12
 var day = today.getUTCDate();
 var year = today.getUTCFullYear();
 
-  today = year + "-" + month + "-" + day;
+  today = year + "-" + '0'+month + "-" + '0'+day;
 
 function App() {
   const [coin, setCoin] = useState("카나리아바이오");
@@ -21,7 +21,6 @@ function App() {
   const [isLong, setIsLong] = useState(true); //eslint-disable-line no-unused-vars
   const [leverage, setLeverage] = useState(1); //eslint-disable-line no-unused-vars
   const [date, setdate] = useState(today);
-  const zero = num => num < 10 && num >= 0 ? "0" + num : num;
 
   const [result, setResult] = useState(
     ((bidPrice / askPrice - 1) * 75 * 100).toFixed(2)
