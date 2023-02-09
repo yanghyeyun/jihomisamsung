@@ -100,7 +100,7 @@ function App() {
       <br />
       <br />
                 <span>
-        날짜시간 &nbsp;
+        날짜 &nbsp;
         <input
          value={date}
          onChange={(e) => setdate(e.target.value)}
@@ -148,6 +148,34 @@ function App() {
             }}
           >
             {coin}
+         </div>
+         <div
+            style={{
+              position: "absolute",
+              left: "70px",
+              top: "100px",
+              fontSize:"40px",
+              color: "rgb(51,51,51)",
+              fontFamily: "Pretendard",
+              fontWeight: "600",
+
+            }}
+          >
+            {askPrice}
+         </div>
+                  <div
+            style={{
+              position: "absolute",
+              left: "70px",
+              top: "186px",
+              fontSize:"40px",
+              color: "rgb(51,51,51)",
+              fontFamily: "Pretendard",
+              fontWeight: "600",
+
+            }}
+          >
+            {bidPrice}
          </div>
           <div
             style={{
