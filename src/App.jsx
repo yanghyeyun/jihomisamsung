@@ -161,7 +161,7 @@ function App() {
 
             }}
           >
-            {askPrice}
+            {(number(askPrice).tostring().replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g,',')}
          </div>
                   <div
             style={{
@@ -175,7 +175,7 @@ function App() {
 
             }}
           >
-            {bidPrice}
+            {(number(bidPrice).tostring().replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g,',')}
          </div>
           <div
             style={{
