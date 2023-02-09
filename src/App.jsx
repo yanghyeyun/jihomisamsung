@@ -129,7 +129,7 @@ function App() {
               fontSize:"40px",
               color: "rgb(0,0,0)",
               fontFamily: "SpoqaHanSans",
-              fontWeight: "600",
+              fontWeight: "500",
 
             }}
           >
@@ -143,7 +143,7 @@ function App() {
               fontSize:"40px",
               color: "rgb(0,0,0)",
               fontFamily: "SpoqaHanSans",
-              fontWeight: "600",
+              fontWeight: "500",
 
             }}
           >
@@ -157,7 +157,7 @@ function App() {
               fontSize:"40px",
               color: "rgb(0,0,0)",
               fontFamily: "SpoqaHanSans",
-              fontWeight: "600",
+              fontWeight: "500",
 
             }}
           >
@@ -171,7 +171,7 @@ function App() {
               fontSize:"40px",
               color: "rgb(0,0,0)",
               fontFamily: "SpoqaHanSans",
-              fontWeight: "600",
+              fontWeight: "500",
 
             }}
           >
