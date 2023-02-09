@@ -12,7 +12,7 @@ function App() {
   const [maxPrice, setmaxPrice] = useState("100000");
   const [isLong, setIsLong] = useState(true); //eslint-disable-line no-unused-vars
   const [leverage, setLeverage] = useState(1); //eslint-disable-line no-unused-vars
-  const [date, date] = useState(today);
+  const [date, setdate] = useState(today);
   var today = new Date();
 
 var month = today.getUTCMonth() + 1; //months from 1-12
