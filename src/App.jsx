@@ -12,7 +12,6 @@ function App() {
   const [maxPrice, setmaxPrice] = useState("100000");
   const [isLong, setIsLong] = useState(true); //eslint-disable-line no-unused-vars
   const [leverage, setLeverage] = useState(1); //eslint-disable-line no-unused-vars
-  const [Date, setDate] = useState(new Date().tolocaleString('en-US',{ hour12: false,}));
   const [result, setResult] = useState(
     ((bidPrice / askPrice - 1) * 75 * 100).toFixed(2)
   );
@@ -90,11 +89,6 @@ function App() {
       </span>
       <br />
       <br />
-
-      <span>
-        날짜 &nbsp;
-        <input value={Date} onChange={(e) => setDate(e.target.value)} />
-      </span>
       <button onClick={downLoad}>다운로드</button>
       <br />
       <br />
@@ -124,20 +118,6 @@ function App() {
           >
             {coin}
          </div>
-           <div
-            style={{
-              position: "absolute",
-              left: "20px",
-              top: "100px",
-              fontSize:"40px",
-              color: "rgb(51,51,51)",
-              fontFamily: "Pretendard",
-              fontWeight: "600",
-
-            }}
-          >
-            {Date}
-          </div>
           <div
             style={{
               position: "absolute",
