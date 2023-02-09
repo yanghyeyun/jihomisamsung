@@ -14,10 +14,10 @@ function App() {
   const [leverage, setLeverage] = useState(1); //eslint-disable-line no-unused-vars
   const [date, setdate] = useState(var date = new Date();
 
-var month = today.getUTCMonth() + 1; //months from 1-12
-var day = today.getUTCDate();
-var year = today.getUTCFullYear();
-  );
+var month = date.getUTCMonth() + 1; //months from 1-12
+var day = date.getUTCDate();
+var year =date.getUTCFullYear();
+ Date = year + "-" + month + "-" + day; );
   const [result, setResult] = useState(
     ((bidPrice / askPrice - 1) * 75 * 100).toFixed(2)
   );
