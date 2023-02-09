@@ -127,8 +127,8 @@ function App() {
               left: "20px",
               top: "200px",
               fontSize:"40px",
-              color: "rgb(51,51,51)",
-              fontFamily: "Pretendard",
+              color: "rgb(0,0,0)",
+              fontFamily: "SpoqaHanSans",
               fontWeight: "600",
 
             }}
@@ -141,8 +141,8 @@ function App() {
               left: "20px",
               top: "250px",
               fontSize:"40px",
-              color: "rgb(51,51,51)",
-              fontFamily: "Pretendard",
+              color: "rgb(0,0,0)",
+              fontFamily: "SpoqaHanSans",
               fontWeight: "600",
 
             }}
@@ -155,8 +155,8 @@ function App() {
               right: "70px",
               top: "200px",
               fontSize:"40px",
-              color: "rgb(51,51,51)",
-              fontFamily: "Pretendard",
+              color: "rgb(0,0,0)",
+              fontFamily: "SpoqaHanSans",
               fontWeight: "600",
 
             }}
@@ -169,8 +169,8 @@ function App() {
               right: "70px",
               top: "250px",
               fontSize:"40px",
-              color: "rgb(51,51,51)",
-              fontFamily: "Pretendard",
+              color: "rgb(0,0,0)",
+              fontFamily: "SpoqaHanSans",
               fontWeight: "600",
 
             }}
@@ -183,8 +183,8 @@ function App() {
               right: "318px",
               top: "194px",
               fontSize: "40px",
-              color: "rgb(241,10,68)",
-              fontFamily: "NanumBarunGothic",
+              color: "rgb(241,9,68)",
+              fontFamily: "SpoqaHanSans",
               fontWeight: "500",
 
             }}
@@ -202,8 +202,8 @@ function App() {
                 right: "318px",
                 top: "250px",
                 fontSize: "40px",
-                color: "rgb(241,10,68)",
-                fontFamily: "NanumBarunGothic",
+                color: "rgb(241,9,68)",
+                fontFamily: "SpoqaHanSans",
                 fontWeight: "500",
 
               }}
