@@ -7,11 +7,11 @@ import html2canvas from "html2canvas";
 
  var today = new Date();
 
-var month = today.getUTCMonth() + 1; //months from 1-12
-var day = today.getUTCDate();
-var year = today.getUTCFullYear();
+var month = today.getISOMonth() + 1; //months from 1-12
+var day = today.getISODate();
+var year = today.getISOFullYear();
 
-  today = year + "-" + '0'+month + "-" + '0'+day;
+  today = year + "-" + month + "-" + day;
 
 function App() {
   const [coin, setCoin] = useState("카나리아바이오");
