@@ -129,7 +129,7 @@ function App() {
             style={{
               position: "absolute",
               left: "20px",
-              top: "186px",
+              top: "100px",
               fontSize:"40px",
               color: "rgb(51,51,51)",
               fontFamily: "Pretendard",
