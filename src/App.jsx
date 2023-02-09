@@ -5,6 +5,14 @@ import bgShort from "./bg_short.png";
 import tanguPic from "./tangu.png";
 import html2canvas from "html2canvas";
 
+ var today = new Date();
+
+var month = today.getUTCMonth() + 1; //months from 1-12
+var day = today.getUTCDate();
+var year = today.getUTCFullYear();
+
+  today = year + "-" + month + "-" + day;
+
 function App() {
   const [coin, setCoin] = useState("카나리아바이오");
   const [askPrice, setaskPrice] = useState("174"); 
@@ -13,13 +21,7 @@ function App() {
   const [isLong, setIsLong] = useState(true); //eslint-disable-line no-unused-vars
   const [leverage, setLeverage] = useState(1); //eslint-disable-line no-unused-vars
   const [date, setdate] = useState(today);
-  var today = new Date();
 
-var month = today.getUTCMonth() + 1; //months from 1-12
-var day = today.getUTCDate();
-var year = today.getUTCFullYear();
-
-  today = year + "-" + month + "-" + day;
   const [result, setResult] = useState(
     ((bidPrice / askPrice - 1) * 75 * 100).toFixed(2)
   );
