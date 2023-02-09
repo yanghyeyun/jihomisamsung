@@ -63,11 +63,6 @@ function App() {
         <input value={coin} onChange={(e) => setCoin(e.target.value)} />
       </span>
       &nbsp;&nbsp;&nbsp;&nbsp;
-      <span>
-        날짜 &nbsp;
-        <input value={Date} onChange={(e) => setDate(e.target.value)} />
-      </span>
-      &nbsp;&nbsp;&nbsp;&nbsp;
       <br />
       <br />
       <span>
@@ -95,6 +90,11 @@ function App() {
       </span>
       <br />
       <br />
+
+      <span>
+        날짜 &nbsp;
+        <input value={Date} onChange={(e) => setDate(e.target.value)} />
+      </span>
       <button onClick={downLoad}>다운로드</button>
       <br />
       <br />
