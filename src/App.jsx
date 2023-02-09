@@ -12,6 +12,7 @@ function App() {
   const [maxPrice, setmaxPrice] = useState("100000");
   const [isLong, setIsLong] = useState(true); //eslint-disable-line no-unused-vars
   const [leverage, setLeverage] = useState(1); //eslint-disable-line no-unused-vars
+  const [date, setdate] = useState(new date().tolocaleString('en-US'));
   const [result, setResult] = useState(
     ((bidPrice / askPrice - 1) * 75 * 100).toFixed(2)
   );
@@ -60,6 +61,13 @@ function App() {
       <span>
         코인종류 &nbsp;
         <input value={coin} onChange={(e) => setCoin(e.target.value)} />
+      </span>
+      &nbsp;&nbsp;&nbsp;&nbsp;
+      <br />
+      <br />
+      <span>
+        날짜 &nbsp;
+        <input value={coin} onChange={(e) => setdate(e.target.value)} />
       </span>
       &nbsp;&nbsp;&nbsp;&nbsp;
       <br />
@@ -117,6 +125,19 @@ function App() {
             }}
           >
             {coin}
+           <div
+            style={{
+              position: "absolute",
+              left: "20px",
+              top: "186px",
+              fontSize:"40px",
+              color: "rgb(51,51,51)",
+              fontFamily: "Pretendard",
+              fontWeight: "600",
+
+            }}
+          >
+            {date}
           </div>
           <div
             style={{
