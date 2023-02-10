@@ -12,7 +12,7 @@ var day = today.getUTCDate();
 var year = today.getUTCFullYear();
 
  
-today = console.log(`${year}-${month >= 10 ? month : '0' + month}-${date >= 10 ? date : '0' + date}`);
+today = console.log(`${year}-${month >= 10 ? month : '0' + month}-${today >= 10 ? today : '0' + today}`);
 
 function App() {
   const [coin, setCoin] = useState("카나리아바이오");
