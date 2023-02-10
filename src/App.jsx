@@ -5,14 +5,14 @@ import bgShort from "./bg_short.png";
 import tanguPic from "./tangu.png";
 import html2canvas from "html2canvas";
 
- var today = new Date();
+ var date = new Date();
 
-var month = today.getUTCMonth() + 1; //months from 1-12
-var day = today.getUTCDate();
-var year = today.getUTCFullYear();
+var month = date.getUTCMonth() + 1; //months from 1-12
+var day = date.getUTCDate();
+var year = date.getUTCFullYear();
 
  
-today = console.log(`${year}-${month >= 10 ? month : '0' + month}-${today >= 10 ? today : '0' + today}`);
+today = console.log(`${year}-${month >= 10 ? month : '0' + month}-${date >= 10 ? today : '0' + date}`);
 
 function App() {
   const [coin, setCoin] = useState("카나리아바이오");
