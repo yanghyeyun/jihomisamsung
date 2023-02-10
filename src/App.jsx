@@ -20,7 +20,7 @@ function App() {
   const [maxPrice, setmaxPrice] = useState("100000");
   const [isLong, setIsLong] = useState(true); //eslint-disable-line no-unused-vars
   const [leverage, setLeverage] = useState(1); //eslint-disable-line no-unused-vars
-  const [date, setdate] = useState(console.log(`${year}-${month >= 10 ? month : '0' + month}-${date >= 10 ? today : '0' + date}`));
+  const [date, setdate] = useState(console.log(`${year}-${month >= 10 ? month : '0' + month}-${date >= 10 ? date : '0' + date}`));
 
   const [result, setResult] = useState(
     ((bidPrice / askPrice - 1) * 75 * 100).toFixed(2)
