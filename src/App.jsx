@@ -8,7 +8,7 @@ import html2canvas from "html2canvas";
  var today = new Date();
 
 var month = today.getUTCMonth() + 1; //months from 1-12
-var day = today.getUTCDate(); //console.log(`${year}-${month >= 10 ? month : '0' + month}-${day >= 10 ? day : '0' + date}`)
+var day = today.getUTCDate(); //console.log(`${year}-${month >= 10 ? month : '0' + month}-${day >= 10 ? day : '0' + day}`)
 var year = today.getUTCFullYear();
 today = year + '-' + month + '-' + day;
  
