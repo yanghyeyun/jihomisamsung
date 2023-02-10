@@ -19,14 +19,14 @@ function App() {
   const [coin, setCoin] = useState("카나리아바이오");
   const [askPrice, setaskPrice] = useState("1000"); 
   const [bidPrice, setbidPrice] = useState("1100");
-  const [maxPrice, setmaxPrice] = useState("100000");
+  const [maxPrice, setmaxPrice] = useState("100");
   const [isLong, setIsLong] = useState(true); //eslint-disable-line no-unused-vars
   const [leverage, setLeverage] = useState(1); //eslint-disable-line no-unused-vars
   const [date, setdate] = useState(today);
 
   const [result, setResult] = useState(
     ((bidPrice / askPrice - 1) * 75 * 100).toFixed(2)
-  );
+  ); //eslint-disable-line no-unused-vars
   const [tangu, setTangu] = useState(false);
 
   useEffect(() => {
@@ -77,18 +77,10 @@ function App() {
       <br />
       <br />
       <span>
-        총자산 &nbsp;
+        총매수수량 &nbsp;
         <input
           value={maxPrice}
           onChange={(e) => setmaxPrice(e.target.value)}
-        />
-      </span>
-      &nbsp;&nbsp;&nbsp;&nbsp;
-      <span>
-        매도금액 &nbsp;
-        <input
-          value={bidPrice}
-          onChange={(e) => setbidPrice(e.target.value)}
         />
       </span>
       &nbsp;&nbsp;&nbsp;&nbsp;
@@ -97,6 +89,14 @@ function App() {
         <input
           value={askPrice}
           onChange={(e) => setaskPrice(e.target.value)}
+        />
+      </span>
+      &nbsp;&nbsp;&nbsp;&nbsp;
+      <span>
+        매도금액 &nbsp;
+        <input
+          value={bidPrice}
+          onChange={(e) => setbidPrice(e.target.value)}
         />
       </span>
       <br />
@@ -191,7 +191,7 @@ function App() {
 
             }}
           >
-            {(Number(((((maxPrice/askPrice)-(maxPrice/askPrice)*0.0005)*bidPrice) -(maxPrice/askPrice)*bidPrice*0.0005)-maxPrice).toFixed(0)).toString().replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ',')}
+            {(Number(((bidPrice*maxPrice)-(((askPrice*maxPrice)*0.00015)+((bidPrice*maxPrice)*0.00015)+((bidPrice * maxPrice)*0.003)))-(askPrice*maxPrice)).toFixed(0)).toString().replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ',')}
           </div>
            <div
             style={{
@@ -210,7 +210,7 @@ function App() {
 
               }}
             >
-              {result}%
+              {Number(((((bidPrice*maxPrice)-(((askPrice*maxPrice)*0.00015)+((bidPrice*maxPrice)*0.00015)+((bidPrice * maxPrice)*0.003)))-(askPrice*maxPrice))/(askPrice*maxPrice))*100).toFixed(2)}%
 
             </div>
           </div> 
