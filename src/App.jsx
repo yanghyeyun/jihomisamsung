@@ -7,10 +7,12 @@ import html2canvas from "html2canvas";
 
  var today = new Date();
 
-var month = today.getUTCMonth() + 1; //months from 1-12  //console.log(`${year}-${month >= 10 ? month : '0' + month}-${day >= 10 ? day : '0' + day}`)
-var day = today.getUTCDate(); //console.log(`${year}-${month >= 10 ? month : '0' + month}-${day >= 10 ? day : '0' + day}`)
+var month = today.getUTCMonth() + 1; 
+var day = today.getUTCDate(); 
 var year = today.getUTCFullYear();
-today = year + '-' + month + '-' + day;
+
+today = year + '-' + 'month >= 10 ? month : '0' + month' + '-' + day;
+
  
 
 function App() {
