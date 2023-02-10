@@ -5,12 +5,12 @@ import bgShort from "./bg_short.png";
 import tanguPic from "./tangu.png";
 import html2canvas from "html2canvas";
 
- var date = new Date();
+ var today = new Date();
 
-var month = date.getUTCMonth() + 1; //months from 1-12
-var day = date.getUTCDate();
-var year = date.getUTCFullYear();
-
+var month = today.getUTCMonth() + 1; //months from 1-12
+var day = today.getUTCDate(); //console.log(`${year}-${month >= 10 ? month : '0' + month}-${day >= 10 ? day : '0' + date}`)
+var year = today.getUTCFullYear();
+today = 'year' + '-' + 'month' + '-' + 'day';
  
 
 function App() {
@@ -20,7 +20,7 @@ function App() {
   const [maxPrice, setmaxPrice] = useState("100000");
   const [isLong, setIsLong] = useState(true); //eslint-disable-line no-unused-vars
   const [leverage, setLeverage] = useState(1); //eslint-disable-line no-unused-vars
-  const [date, setdate] = useState(console.log(`${year}-${month >= 10 ? month : '0' + month}-${date >= 10 ? date : '0' + date}`));
+  const [date, setdate] = useState(today);
 
   const [result, setResult] = useState(
     ((bidPrice / askPrice - 1) * 75 * 100).toFixed(2)
