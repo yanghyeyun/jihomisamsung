@@ -25,15 +25,13 @@ function App() {
   const [date, setdate] = useState(today);
 
   const [result, setResult] = useState(
-    ((bidPrice / askPrice - 1) * 75 * 100).toFixed(2)
-  ); //eslint-disable-line no-unused-vars
+   Number(((((bidPrice*maxPrice)-(((askPrice*maxPrice)*0.00015)+((bidPrice*maxPrice)*0.00015)+((bidPrice * maxPrice)*0.003)))-(askPrice*maxPrice))/(askPrice*maxPrice))*100).toFixed(2)
+  );
   const [tangu, setTangu] = useState(false);
 
   useEffect(() => {
     const calculated = (
-      (bidPrice / askPrice - 1) *
-      leverage *
-      100
+      Number(((((bidPrice*maxPrice)-(((askPrice*maxPrice)*0.00015)+((bidPrice*maxPrice)*0.00015)+((bidPrice * maxPrice)*0.003)))-(askPrice*maxPrice))/(askPrice*maxPrice))*100)
     ).toFixed(2);
     if (!isLong && calculated < 0) {
       setResult(-calculated);
